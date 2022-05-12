@@ -15,13 +15,6 @@ html {
 /* Sections
    ========================================================================== */
 /**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
  * Render the `main` element consistently in IE.
  */
 main {
@@ -356,40 +349,44 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  width: 95vw;
+}
+
 /**
  * Basic styles for links
- */
-/**
- * Basic typography style for copy text
  */
 .footer {
   background-color: black;
 }
-
 .footer__list-item {
   color: white;
 }
 
-h1 {
-  background-color: #FF79DA;
-}
-
-.logo-container {
-  border: 1px solid;
-}
-
 .logo {
   border: 1px solid;
-  width: 40vw;
+}
+.logo__img {
+  width: 50%;
+  display: block;
+  margin: auto;
 }
 
-.logo-container {
+.location {
   border: 1px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
-
-.logo {
-  border: 1px solid;
-  width: 40vw;
+.location__icon {
+  color: black;
+  margin: 10px 5px;
+}
+.location__address {
+  border: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,9 +3,9 @@
 // -----------------------------------------------------------------------------
 
 
-@mixin flex {
+@mixin flex ($direction:row) {
   display: flex;
-  flex-direction: row;
+  flex-direction: $direction;
 }
 
 @mixin flex-center {

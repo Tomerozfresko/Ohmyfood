@@ -4,9 +4,9 @@
 
 .footer{
     background-color: black;
+    &__list-item {
+        color: white;
+    }
 }
 
-.footer__list-item{
-    color: white;
-}
 

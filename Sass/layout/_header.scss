@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use '../utils' as *;
+
+.logo {
+    @include border;
+    &__img {
+        width: 50%;
+        display:block;
+        margin: auto;
+    }
+}
+
+.location {
+    @include border;
+    @include flex;
+    @include flex-center;
+    background-color: lightgray;
+    &__icon{
+        color:black;
+        margin: 10px 5px;
+
+    }
+    &__address{
+        border: none;
+        color:black;
+
+    }
+}
