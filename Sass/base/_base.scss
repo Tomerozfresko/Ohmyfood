@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 
 /**
- * Set up a decent box model on the root element
+ * Set up a box model on the root element
  */
 html {
   box-sizing: border-box;
@@ -24,12 +24,4 @@ html {
 /**
  * Basic styles for links
  */
-a {
-  color: $brand-color;
-  text-decoration: none;
 
-  @include on-event {
-    color: $text-color;
-    text-decoration: underline;
-  }
-}
