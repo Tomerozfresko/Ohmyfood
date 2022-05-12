@@ -3,6 +3,7 @@
 // -----------------------------------------------------------------------------
 @use '../utils' as *;
 
+
 .logo {
     @include border;
     &__img {
@@ -16,7 +17,7 @@
     @include border;
     @include flex;
     @include flex-center;
-    background-color: lightgray;
+    background-color:darken($primary,10%);
     &__icon{
         color:black;
         margin: 10px 5px;
@@ -25,6 +26,7 @@
     &__address{
         border: none;
         color:black;
-
+        background-color:darken($primary,10%);
+        font-size: 5vw;
     }
 }
