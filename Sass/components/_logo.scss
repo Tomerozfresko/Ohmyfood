@@ -1,0 +1,13 @@
+@use '../abstracts' as a;
+
+
+
+.logo-container {
+    @include a.border;
+}
+
+
+.logo{
+    border: 1px solid;
+    width: 40vw;
+}

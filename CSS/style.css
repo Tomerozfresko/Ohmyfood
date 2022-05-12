@@ -360,13 +360,6 @@ html {
  * Basic styles for links
  */
 /**
- * Basic typography style for copy text
- */
-body {
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-}
-
-/**
  * Clear inner floats
  */
 .clearfix::after {
@@ -425,8 +418,24 @@ body {
   width: 1px;
 }
 
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 h1 {
   background-color: #FF79DA;
+}
+
+.logo-container {
+  border: 1px solid;
+}
+
+.logo {
+  border: 1px solid;
+  width: 40vw;
 }
 
 /*# sourceMappingURL=style.css.map */
