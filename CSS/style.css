@@ -378,7 +378,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #782cd3;
+  background-color: #bababa;
 }
 .location__icon {
   color: black;
@@ -387,7 +387,7 @@ body {
 .location__address {
   border: none;
   color: black;
-  background-color: #782cd3;
+  background-color: #bababa;
   font-size: 5vw;
 }
 

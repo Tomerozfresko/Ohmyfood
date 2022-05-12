@@ -17,16 +17,16 @@
     @include border;
     @include flex;
     @include flex-center;
-    background-color:darken($primary,10%);
+    background-color:darken($lightgray,10%);
     &__icon{
-        color:black;
+        color:$black;
         margin: 10px 5px;
 
     }
     &__address{
         border: none;
-        color:black;
-        background-color:darken($primary,10%);
+        color:$black;
+        background-color:darken($lightgray,10%);
         font-size: 5vw;
     }
 }
