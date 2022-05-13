@@ -1,10 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-@use '../utils' as *;
-@use '../base' as *;
-
-
 
 .logo {
     @include border;
@@ -14,6 +10,7 @@
         margin: auto;
     }
 }
+
 
 .location {
     @include border;
@@ -32,17 +29,6 @@
         font-size: 5vw;
     }
 }
-
-
-
-@mixin font-design ($type) {
-    $palette: map-get($font-palette, $type);
-    font-size: map-get($palette, fs);
-    font-weight: map-get($palette, fw);
-    color: map-get($palette, cl);
-  }
-
-
 
   .intrudction {
     background-color: $lightgray;
