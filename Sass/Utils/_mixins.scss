@@ -2,6 +2,12 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+@mixin font-design ($type) {
+  $palette: map-get($font-palette, $type);
+  font-size: map-get($palette, fs);
+  font-weight: map-get($palette, fw);
+  color: map-get($palette, cl);
+}
 
 @mixin flex ($direction:row) {
   display: flex;
@@ -10,9 +16,15 @@
 
 @mixin flex-center {
   justify-content:center;
-  align-items:center;
 }
 
 @mixin border {
   border: 1px solid;
 }
+
+@mixin font-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: beige;
+}
+

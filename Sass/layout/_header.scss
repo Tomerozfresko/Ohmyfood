@@ -2,6 +2,8 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 @use '../utils' as *;
+@use '../base' as *;
+
 
 
 .logo {
@@ -28,5 +30,38 @@
         color:$black;
         background-color:darken($lightgray,10%);
         font-size: 5vw;
+    }
+}
+
+
+
+@mixin font-design ($type) {
+    $palette: map-get($font-palette, $type);
+    font-size: map-get($palette, fs);
+    font-weight: map-get($palette, fw);
+    color: map-get($palette, cl);
+  }
+
+
+
+  .intrudction {
+    background-color: $lightgray;
+    @include flex(column);
+    // @include flex-center;
+    justify-content: baseline;
+    &__main-text{
+        @include font-design(title);
+    }
+    &__sub-text{
+        @include font-design(sub);
+    }
+    &__explore-link{
+        background-color: $primary;        
+        @include font-design(button);
+        padding: 10px;
+        border-radius: 20px;
+        @include border;
+        margin-bottom: 10px;
+        text-decoration: none;
     }
 }

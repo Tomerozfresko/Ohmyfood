@@ -7,9 +7,25 @@
 // Graphic identity - Fonts
 // -----------------------------------------------------------------------------
 
-// TBD a map of (shrikhand and roboto); 
-$fonts: (
-  'logo': shrikhand,
-  'title': shrikhand,
-  'text': roboto,
-) ;
+$font-palette: (
+  title: (
+      fs: 16px,
+      fw: 600,
+      cl:black,
+  ),
+  sub: (
+    fs: 16px,
+    fw: 300,
+    cl:lightblack,
+  ),
+  card: (
+    fs: 16px,
+    fw: 600,
+    cl:blue,
+  ),
+  button: (
+    fs: 16px,
+    fw: 400,
+    cl:white,
+)
+);
