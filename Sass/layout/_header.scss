@@ -1,9 +1,12 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+@use '../Utils/colors';
+@use '../Utils/fonts';
+@use '../Utils/mixins';
 
 .logo {
-    @include border;
+    @include mixins.border;
     &__img {
         width: 50%;
         display:block;
@@ -13,40 +16,40 @@
 
 
 .location {
-    @include border;
-    @include flex;
-    @include flex-center;
-    background-color:darken($lightgray,10%);
+    @include mixins.border;
+    @include mixins.flex;
+    @include mixins.flex-center;
+    background-color:darken(colors.$lightgray,10%);
     &__icon{
-        color:$black;
+        color:colors.$black;
         margin: 10px 5px;
 
     }
     &__address{
         border: none;
-        color:$black;
-        background-color:darken($lightgray,10%);
+        color:colors.$black;
+        background-color:darken(colors.$lightgray,10%);
         font-size: 5vw;
     }
 }
 
   .intrudction {
-    background-color: $lightgray;
-    @include flex(column);
+    background-color: colors.$lightgray;
+    @include mixins.flex(column);
     // @include flex-center;
     justify-content: baseline;
     &__main-text{
-        @include font-design(title);
+        @include mixins.font-design(title);
     }
     &__sub-text{
-        @include font-design(sub);
+        @include mixins.font-design(sub);
     }
     &__explore-link{
-        background-color: $primary;        
-        @include font-design(button);
+        background-color: colors.$primary;        
+        @include mixins.font-design(button);
         padding: 10px;
         border-radius: 20px;
-        @include border;
+        @include mixins.border;
         margin-bottom: 10px;
         text-decoration: none;
     }
