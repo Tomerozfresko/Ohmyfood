@@ -48,8 +48,8 @@
     background-color: colors.$lightgray;
     @include mixins.flex(column);
     text-align: center;
-    // height: 200px;
     padding: 20px;
+    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     &__main-text{
         @include mixins.font-design(title);
         margin: Opx;
@@ -63,6 +63,6 @@
         padding: 10px;
         border-radius: 20px;
         text-decoration: none;
-        box-shadow: 1px 1px 5px colors.$black;
-    }
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 }
