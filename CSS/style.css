@@ -357,7 +357,7 @@ body {
  * Basic styles for links
  */
 .logo {
-  border: 1px solid yellow;
+  border: 1px solid black;
 }
 .logo__img {
   width: 50%;
@@ -366,7 +366,7 @@ body {
 }
 
 .location {
-  border: 1px solid yellow;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -406,7 +406,7 @@ body {
   color: white;
   padding: 10px;
   border-radius: 20px;
-  border: 1px solid yellow;
+  border: 1px solid black;
   margin-bottom: 10px;
   text-decoration: none;
 }

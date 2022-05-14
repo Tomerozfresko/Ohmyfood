@@ -1,7 +1,8 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
-@use '../Utils/fonts';
+@use 'fonts';
+@use 'colors';
 
 @mixin font-design ($type) {
   $palette: map-get(fonts.$font-palette, $type);
@@ -20,12 +21,6 @@
 }
 
 @mixin border {
-  border: 1px solid yellow;
-}
-
-@mixin font-title {
-  font-size: 15px;
-  font-weight: 600;
-  color: beige;
+  border: 1px solid colors.$black;
 }
 

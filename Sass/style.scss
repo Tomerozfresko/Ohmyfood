@@ -1,19 +1,19 @@
 
 // 1. Configuration and helpers
-@use './utils' as *;
+@use 'utils';
 
 // 2. Vendors
-@use './vendors' as *;
+@use 'vendors';
 
 // 3. Base stuff
-@use './base' as *;
+@use 'base';
 
 // 4. Components
-@use './components' as *;
+@use 'components';
 
 // 5. Layout-related sections
-@use './layout' as *;
+@use 'layout';
 
 // 6. Page-specific styles
-@use './pages' as *;
+@use 'pages';
 
