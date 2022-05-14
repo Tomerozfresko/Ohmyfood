@@ -9,6 +9,8 @@
   font-size: map-get($palette, fs);
   font-weight: map-get($palette, fw);
   color: map-get($palette, cl);
+  font-family: map-get($palette, ff);
+
 }
 
 @mixin flex ($direction:row) {

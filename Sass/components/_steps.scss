@@ -25,3 +25,7 @@
         
     }
 }
+
+.title{
+    @include mixins.font-design(title);
+}

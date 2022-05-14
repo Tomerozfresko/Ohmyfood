@@ -6,30 +6,41 @@
 @use '../Utils/mixins';
 
 .logo {
-    @include mixins.border;
-    &__img {
+    // @include mixins.border;
+    &__link {
         width: 50%;
         display:block;
         margin: auto;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+    &__text{
+        @include mixins.font-design(logo)
     }
 }
 
 
 .location {
-    @include mixins.border;
+    // @include mixins.border;
     @include mixins.flex;
     @include mixins.flex-center;
-    background-color:darken(colors.$lightgray,10%);
+    background-color:darken(colors.$lightgray,5%);
     &__icon{
         color:colors.$black;
-        margin: 10px 5px;
+        margin: 10px 0px;
+        position: relative;
+        left: 2rem;
 
     }
-    &__address{
+    &__address-input{
+        @include mixins.border;        
+        background-color:darken(colors.$lightgray,5%);
         border: none;
-        color:colors.$black;
-        background-color:darken(colors.$lightgray,10%);
-        font-size: 5vw;
+        @include mixins.font-design(sub);
+        text-align:center;
+   
+
     }
 }
 
@@ -37,20 +48,21 @@
     background-color: colors.$lightgray;
     @include mixins.flex(column);
     text-align: center;
+    // height: 200px;
+    padding: 20px;
     &__main-text{
         @include mixins.font-design(title);
+        margin: Opx;
     }
     &__sub-text{
         @include mixins.font-design(sub);
     }
     &__explore-link{
-        background-color: colors.$primary;  
-        width: 200px;      
+        background: linear-gradient(to bottom right,colors.$secondary, colors.$primary);;  
         @include mixins.font-design(button);
         padding: 10px;
         border-radius: 20px;
-        @include mixins.border;
-        margin-bottom: 10px;
         text-decoration: none;
+        box-shadow: 1px 1px 5px colors.$black;
     }
 }

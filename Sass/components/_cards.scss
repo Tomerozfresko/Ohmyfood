@@ -3,9 +3,9 @@
 @use '../Utils/mixins';
 
 .card{
-    @include mixins.border;
+    // @include mixins.border;
     @include mixins.flex(column);
-    height: 210px; 
+    height: 230px; 
     margin:Auto;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -17,7 +17,7 @@
     &__new-box{
     background-color: colors.$Tetiary;
     position: relative;
-    left: 290px;
+    left: 300px;
     bottom: 140px;
     text-align: center;
     width: 40px;     
