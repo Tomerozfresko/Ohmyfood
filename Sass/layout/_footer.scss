@@ -1,15 +1,25 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+@use '../Utils/fonts';
+@use '../Utils/colors';
+@use '../Utils/mixins';
 
 .footer{
-    background-color: blue;
+    background-color:colors.$black;
     &__list-item {
         color: white;
     }
     &__img{
         width: 20ox;
         height: 20px;
+    }
+    &__list{
+        padding-left: 3px;
+    }
+    &__list-item{
+        list-style: none;
+        text-align: left;
     }
 }
 

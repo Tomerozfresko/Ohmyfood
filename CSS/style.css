@@ -468,7 +468,7 @@ body {
 }
 
 .footer {
-  background-color: blue;
+  background-color: black;
 }
 .footer__list-item {
   color: white;
@@ -476,6 +476,13 @@ body {
 .footer__img {
   width: 20ox;
   height: 20px;
+}
+.footer__list {
+  padding-left: 3px;
+}
+.footer__list-item {
+  list-style: none;
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
