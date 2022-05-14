@@ -371,7 +371,6 @@ body {
   margin-bottom: 15px;
 }
 .step__number {
-  background-color: red;
   position: relative;
   right: 15px;
   border-radius: 40%;
@@ -381,14 +380,35 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 200px;
+  height: 210px;
+  margin: Auto;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 .card__image {
   height: 150px;
-  object-fit: cover;
+  object-fit: fill;
+  display: block;
+}
+.card__new-box {
+  background-color: #99E2D0;
+  position: relative;
+  left: 290px;
+  bottom: 140px;
+  text-align: center;
+  width: 40px;
+}
+.card__icon {
+  position: relative;
+  left: 300px;
+  bottom: 30px;
+  width: 20px;
+}
+.card__main-text {
+  margin: 0px;
+}
+.card__sub-text {
+  margin: 0px;
 }
 
 .logo {
@@ -448,10 +468,14 @@ body {
 }
 
 .footer {
-  background-color: black;
+  background-color: blue;
 }
 .footer__list-item {
   color: white;
+}
+.footer__img {
+  width: 20ox;
+  height: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

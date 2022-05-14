@@ -5,13 +5,35 @@
 .card{
     @include mixins.border;
     @include mixins.flex(column);
-    width: 350px;
-    height: 200px; 
+    height: 210px; 
+    margin:Auto;
     margin-bottom: 10px;
     border-radius: 5px;
     &__image{
         height: 150px;
-        object-fit: cover;
+        object-fit: fill;
+        display: block;
     }
+    &__new-box{
+    background-color: colors.$Tetiary;
+    position: relative;
+    left: 290px;
+    bottom: 140px;
+    text-align: center;
+    width: 40px;     
+    }
+    &__icon{
+        position: relative;
+        left: 300px;
+        bottom: 30px;
+        width: 20px;
+    }
+    &__main-text{
+        margin: 0px;;
+    }
+    &__sub-text{
+        margin: 0px;;
+    }
+    
     
 }

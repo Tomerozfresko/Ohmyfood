@@ -3,9 +3,13 @@
 // -----------------------------------------------------------------------------
 
 .footer{
-    background-color: black;
+    background-color: blue;
     &__list-item {
         color: white;
+    }
+    &__img{
+        width: 20ox;
+        height: 20px;
     }
 }
 
