@@ -2,3 +2,16 @@
 @use '../Utils/colors';
 @use '../Utils/mixins';
 
+.card{
+    @include mixins.border;
+    @include mixins.flex(column);
+    width: 350px;
+    height: 200px; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    &__image{
+        height: 150px;
+        object-fit: cover;
+    }
+    
+}

@@ -377,6 +377,20 @@ body {
   border-radius: 40%;
 }
 
+.card {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.card__image {
+  height: 150px;
+  object-fit: cover;
+}
+
 .logo {
   border: 1px solid black;
 }
