@@ -356,6 +356,27 @@ body {
 /**
  * Basic styles for links
  */
+.step {
+  background-color: #d3d3d3;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.step__icon {
+  color: #9356DC;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.step__number {
+  background-color: red;
+  position: relative;
+  right: 15px;
+  border-radius: 40%;
+}
+
 .logo {
   border: 1px solid black;
 }
@@ -387,7 +408,7 @@ body {
   background-color: #d3d3d3;
   display: flex;
   flex-direction: column;
-  justify-content: baseline;
+  text-align: center;
 }
 .intrudction__main-text {
   font-size: 16px;
@@ -401,6 +422,7 @@ body {
 }
 .intrudction__explore-link {
   background-color: #9356DC;
+  width: 200px;
   font-size: 16px;
   font-weight: 400;
   color: white;

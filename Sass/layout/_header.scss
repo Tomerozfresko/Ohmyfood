@@ -36,8 +36,7 @@
   .intrudction {
     background-color: colors.$lightgray;
     @include mixins.flex(column);
-    // @include flex-center;
-    justify-content: baseline;
+    text-align: center;
     &__main-text{
         @include mixins.font-design(title);
     }
@@ -45,7 +44,8 @@
         @include mixins.font-design(sub);
     }
     &__explore-link{
-        background-color: colors.$primary;        
+        background-color: colors.$primary;  
+        width: 200px;      
         @include mixins.font-design(button);
         padding: 10px;
         border-radius: 20px;
