@@ -39,7 +39,19 @@ $font-palette: (
     fw: 300,
     cl:white,
     ff:'roboto',
-),
+  ),
+  step: (
+  fs: 0.8rem,
+  fw: 600,
+  cl:colors.$black,
+  ff:'roboto',
+  ),
+  step-number: (
+    fs: 0.8rem,
+    fw: 300,
+    cl:white,
+    ff:'roboto',
+    ),
   text: (
   fs: 1rem,
   fw: 400,
