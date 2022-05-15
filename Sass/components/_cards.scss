@@ -3,10 +3,10 @@
 @use "../Utils/mixins";
 
 .card {
-//   @include mixins.border;
+  //   @include mixins.border;
   @include mixins.flex(column);
   justify-content: none;
-  height: 200px;
+  max-height: 250px;
   max-width: 95%;
   margin: Auto;
   margin-bottom: 10px;
@@ -34,13 +34,12 @@
   &__icon {
     position: relative;
     left: 90%;
-    bottom: 12%;
+    bottom: 25px;
     width: 20px;
   }
   &__main-text {
     margin: 15px 0px 0px 5px;
     @include mixins.font-design(card-main-text);
-
   }
   &__sub-text {
     margin: 0px 0px 0px 7px;

@@ -1,9 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
-@use 'colors';
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@use "colors";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 
 // -----------------------------------------------------------------------------
 // Graphic identity - Fonts
@@ -11,63 +11,75 @@
 
 $font-palette: (
   logo: (
-      fs: 2rem,
-      fw: 600,
-      cl:colors.$black,
-      ff:'Shrikhand',
+    fs: 4rem,
+    fw: 600,
+    cl: colors.$black,
+    ff: "Shrikhand",
+  ),
+  logo-footer: (
+    fs: 1rem,
+    fw: 500,
+    cl: colors.$white,
+    ff: "Shrikhand",
   ),
   title: (
-      fs: 1rem,
-      fw: 600,
-      cl:colors.$black,
-      ff:'roboto',
-  ),
-  sub: (
-    fs: 1rem,
-    fw: 300,
-    cl:colors.$black,
-    ff:'roboto',
-  ),
-  card: (
     fs: 1rem,
     fw: 600,
-    cl:colors.$black,
-    ff:'roboto',
+    cl: colors.$black,
+    ff: "roboto",
+  ),
+  sub: (
+    fs: 2rem,
+    fw: 300,
+    cl: colors.$black,
+    ff: "roboto",
+  ),
+  card: (
+    fs: 2rem,
+    fw: 600,
+    cl: colors.$black,
+    ff: "roboto",
   ),
   button: (
     fs: 0.8rem,
     fw: 300,
-    cl:white,
-    ff:'roboto',
+    cl: white,
+    ff: "roboto",
   ),
   step: (
-  fs: 0.8rem,
-  fw: 600,
-  cl:colors.$black,
-  ff:'roboto',
+    fs: 1.6rem,
+    fw: 600,
+    cl: colors.$black,
+    ff: "roboto",
   ),
   step-number: (
-    fs: 0.8rem,
+    fs: 1.6rem,
     fw: 300,
-    cl:white,
-    ff:'roboto',
-    ),
+    cl: white,
+    ff: "roboto",
+  ),
   new-box: (
-      fs: 0.8rem,
-      fw: 500,
-      cl:darken(colors.$Tetiary,40%),       
-      ff:'roboto',
-      ),
+    fs: 1.6rem,
+    fw: 500,
+    cl: darken(colors.$Tetiary, 40%),
+    ff: "roboto",
+  ),
   card-main-text: (
-  fs: 1rem,
-  fw: 600,
-  cl:colors.$black,
-  ff:'roboto',
-),
+    fs: 2rem,
+    fw: 600,
+    cl: colors.$black,
+    ff: "roboto",
+  ),
   card-sub-text: (
-  fs: 1rem,
-  fw: 300,
-  cl:colors.$black,
-  ff:'roboto',
-)
+    fs: 2rem,
+    fw: 300,
+    cl: colors.$black,
+    ff: "roboto",
+  ),
+  list-item: (
+    fs: 1rem,
+    fw: 300,
+    cl: colors.$white,
+    ff: "roboto",
+  ),
 );

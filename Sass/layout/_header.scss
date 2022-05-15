@@ -1,68 +1,69 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
-@use '../Utils/fonts';
-@use '../Utils/colors';
-@use '../Utils/mixins';
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
 
 .logo {
-    // @include mixins.border;
-    &__link {
-        width: 50%;
-        display:block;
-        margin: auto;
-        cursor: pointer;
-        text-decoration: none;
-        text-align: center;
-    }
-    &__text{
-        @include mixins.font-design(logo)
-    }
-}
+  @include mixins.flex;
+  @include mixins.flex-center;
+  margin: 0px;
 
+  &__link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &__text {
+    @include mixins.font-design(logo);
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+}
 
 .location {
-    // @include mixins.border;
-    @include mixins.flex;
-    @include mixins.flex-center;
-    background-color:darken(colors.$lightgray,5%);
-    &__icon{
-        color:colors.$black;
-        margin: 10px 0px;
-        position: relative;
-        left: 2rem;
-
-    }
-    &__address-input{
-        @include mixins.border;        
-        background-color:darken(colors.$lightgray,5%);
-        border: none;
-        @include mixins.font-design(sub);
-        text-align:center;
-   
-
-    }
-}
-
-  .intrudction {
-    background-color: colors.$lightgray;
-    @include mixins.flex(column);
+  // @include mixins.border;
+  @include mixins.flex;
+  @include mixins.flex-center;
+  background-color: darken(colors.$lightgray, 5%);
+  &__icon {
+    color: colors.$black;
+    margin: 10px 0px;
+    position: relative;
+    left: 2rem;
+  }
+  &__address-input {
+    @include mixins.border;
+    background-color: darken(colors.$lightgray, 5%);
+    border: none;
+    @include mixins.font-design(sub);
     text-align: center;
-    padding: 20px;
-    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    &__main-text{
-        @include mixins.font-design(title);
-        margin: Opx;
-    }
-    &__sub-text{
-        @include mixins.font-design(sub);
-    }
-    &__explore-link{
-        background: linear-gradient(to bottom right,colors.$secondary, colors.$primary);;  
-        @include mixins.font-design(button);
-        padding: 10px;
-        border-radius: 20px;
-        text-decoration: none;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 }
+
+.intrudction {
+  background-color: colors.$lightgray;
+  @include mixins.flex(column);
+  text-align: center;
+  padding: 20px;
+  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  &__main-text {
+    @include mixins.font-design(title);
+    margin: Opx;
+  }
+  &__sub-text {
+    @include mixins.font-design(sub);
+  }
+  &__explore-link {
+    background: linear-gradient(
+      to bottom right,
+      colors.$secondary,
+      colors.$primary
+    );
+    @include mixins.font-design(button);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 }

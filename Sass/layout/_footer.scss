@@ -1,26 +1,42 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
-@use '../Utils/fonts';
-@use '../Utils/colors';
-@use '../Utils/mixins';
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
 
-.footer{
-    background-color:colors.$black;
-    &__list-item {
-        color: white;
-    }
-    &__img{
-        width: 20ox;
-        height: 20px;
-    }
-    &__list{
-        padding-left: 3px;
-    }
-    &__list-item{
-        list-style: none;
-        text-align: left;
-    }
+.footer {
+  background-color: colors.$black;
+  &__list-item {
+    color: white;
+  }
+  &__img {
+    width: 20ox;
+    height: 20px;
+  }
+  &__list {
+    padding-left: 3px;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  &__list-item {
+    list-style: none;
+    @include mixins.font-design(list-item);
+
+  }
 }
 
+.logo {
+  &__link--footer {
+    display: block;
+    margin: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+  }
+  &__text--footer {
+    @include mixins.font-design(logo-footer);
+  }
+}
 
+// <div class="logo--footer"><a class="logo__link--footer" href="index.html"><h1 class="logo__text-footer">ohmyfood</h1></a></div>
