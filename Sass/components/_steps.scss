@@ -1,39 +1,41 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-@use '../Utils/fonts';
-@use '../Utils/colors';
-@use '../Utils/mixins';
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
 
-.step{
-    background-color:colors.$lightgray;
-    padding:10px;
-    margin: 20px 5px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    &__icon{
-        color: darken(colors.$lightgray,60%);
-        margin-right: 10px;
-        margin-left: 10px;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    &__number{
-        position: relative;
-        right:15px;
-        border-radius: 50%;
-        background-color: colors.$primary;
-        @include mixins.font-design(step-number);
-        padding: 5px;
+.step {
+  background-color: colors.$lightgray;
+  padding: 10px;
+  margin: 20px 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  &__icon {
+    color: darken(colors.$lightgray, 60%);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  &--purple{
+      background-color: lighten(colors.$primary, 35%);
+  }
+  &__number {
+    position: relative;
+    right: 15px;
+    border-radius: 50%;
+    background-color: colors.$primary;
+    @include mixins.font-design(step-number);
+    padding: 5px;
+  }
+  &__text {
+    @include mixins.font-design(step);
 
 
-        
-    }
-    &__text{
-        @include mixins.font-design(step);
-    }
+  }
 }
 
-.title{
-    @include mixins.font-design(title);
+.title {
+  @include mixins.font-design(title);
 }
