@@ -422,10 +422,10 @@ body {
 }
 .card__new-box {
   background-color: #99E2D0;
-  position: relative;
+  position: absolute;
   left: 77%;
-  top: 20%;
-  width: 70px;
+  top: 8%;
+  max-width: 70px;
   padding: 3px 15px 3px 15px;
   font-size: 0.8rem;
   font-weight: 500;
