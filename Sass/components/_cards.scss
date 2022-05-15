@@ -5,17 +5,16 @@
 .card {
   //   @include mixins.border;
   @include mixins.flex(column);
-  justify-content: none;
-  height: 270px;
+  height: 250px;
   width: 95%;
   margin: Auto;
   margin-bottom: 10px;
   border-radius: 5px;
   @include mixins.shadow;
   position: relative;
-
   &__image {
     height: 80%;
+    width: 100%;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
