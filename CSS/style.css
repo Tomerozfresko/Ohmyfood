@@ -406,7 +406,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: none;
-  height: 250px;
+  height: 270px;
   width: 95%;
   margin: Auto;
   margin-bottom: 10px;
@@ -423,8 +423,8 @@ body {
 .card__new-box {
   background-color: #99E2D0;
   position: absolute;
-  left: 77%;
-  top: 8%;
+  left: 85%;
+  top: 5%;
   max-width: 70px;
   padding: 3px 15px 3px 15px;
   font-size: 0.8rem;
@@ -436,20 +436,20 @@ body {
   justify-content: center;
 }
 .card__icon {
-  position: relative;
+  position: absolute;
   left: 90%;
   bottom: 25px;
   width: 20px;
 }
 .card__main-text {
-  margin: 15px 0px 0px 5px;
+  margin: 10px 0px 0px 5px;
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
 }
 .card__sub-text {
-  margin: 0px 0px 0px 7px;
+  margin: 0px 0px 5px 7px;
   font-size: 1rem;
   font-weight: 300;
   color: #101010;

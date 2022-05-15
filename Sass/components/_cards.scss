@@ -6,7 +6,7 @@
   //   @include mixins.border;
   @include mixins.flex(column);
   justify-content: none;
-  height: 250px;
+  height: 270px;
   width: 95%;
   margin: Auto;
   margin-bottom: 10px;
@@ -23,8 +23,8 @@
   &__new-box {
     background-color: colors.$Tetiary;
     position: absolute;
-    left: 77%;
-    top: 8%;
+    left: 85%;
+    top: 5%;
     max-width: 70px;
     padding: 3px 15px 3px 15px;
     @include mixins.font-design(new-box);
@@ -32,17 +32,17 @@
     @include mixins.flex-center;
   }
   &__icon {
-    position: relative;
+    position: absolute;
     left: 90%;
     bottom: 25px;
     width: 20px;
   }
   &__main-text {
-    margin: 15px 0px 0px 5px;
+    margin: 10px 0px 0px 5px;
     @include mixins.font-design(card-main-text);
   }
   &__sub-text {
-    margin: 0px 0px 0px 7px;
+    margin: 0px 0px 5px 7px;
     @include mixins.font-design(card-sub-text);
   }
 }
