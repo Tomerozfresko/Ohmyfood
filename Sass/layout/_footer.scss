@@ -7,6 +7,8 @@
 
 .footer {
   background-color: colors.$black;
+  margin: auto;
+  width: 95%;
   &__list-item {
     color: white;
   }
@@ -22,7 +24,6 @@
   &__list-item {
     list-style: none;
     @include mixins.font-design(list-item);
-
   }
 }
 

@@ -532,6 +532,8 @@ body {
 
 .footer {
   background-color: #101010;
+  margin: auto;
+  width: 95%;
 }
 .footer__list-item {
   color: white;
