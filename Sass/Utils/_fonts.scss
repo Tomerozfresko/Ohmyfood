@@ -11,7 +11,7 @@
 
 $font-palette: (
   logo: (
-      fs: 1rem,
+      fs: 2rem,
       fw: 600,
       cl:colors.$black,
       ff:'Shrikhand',
@@ -52,10 +52,22 @@ $font-palette: (
     cl:white,
     ff:'roboto',
     ),
-  text: (
+  new-box: (
+      fs: 0.8rem,
+      fw: 500,
+      cl:darken(colors.$Tetiary,40%),       
+      ff:'roboto',
+      ),
+  card-main-text: (
   fs: 1rem,
-  fw: 400,
-  cl:white,
-  ff:'Shrikhand',
+  fw: 600,
+  cl:colors.$black,
+  ff:'roboto',
+),
+  card-sub-text: (
+  fs: 1rem,
+  fw: 300,
+  cl:colors.$black,
+  ff:'roboto',
 )
 );

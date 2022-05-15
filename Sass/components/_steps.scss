@@ -10,7 +10,7 @@
   padding: 10px;
   margin: 20px 5px;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  @include mixins.shadow;
   &__icon {
     color: darken(colors.$lightgray, 60%);
     margin-right: 10px;
@@ -18,8 +18,8 @@
     margin-top: 15px;
     margin-bottom: 15px;
   }
-  &--purple{
-      background-color: lighten(colors.$primary, 35%);
+  &--purple {
+    background-color: lighten(colors.$primary, 35%);
   }
   &__number {
     position: relative;
@@ -31,11 +31,9 @@
   }
   &__text {
     @include mixins.font-design(step);
-
-
   }
 }
 
 .title {
-  @include mixins.font-design(title);
+    @include mixins.font-design(title);
 }

@@ -1,40 +1,52 @@
-@use '../Utils/fonts';
-@use '../Utils/colors';
-@use '../Utils/mixins';
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
 
-.card{
-    // @include mixins.border;
-    @include mixins.flex(column);
-    height: 230px; 
-    margin:Auto;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    &__image{
-        height: 150px;
-        object-fit: fill;
-        display: block;
-    }
-    &__new-box{
+.card {
+//   @include mixins.border;
+  @include mixins.flex(column);
+  justify-content: none;
+  height: 200px;
+  max-width: 95%;
+  margin: Auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  @include mixins.shadow;
+  position: relative;
+
+  &__image {
+    height: 80%;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+
+    // border: 3px solid;
+  }
+  &__new-box {
     background-color: colors.$Tetiary;
     position: relative;
-    left: 300px;
-    bottom: 140px;
-    text-align: center;
-    width: 40px;     
-    }
-    &__icon{
-        position: relative;
-        left: 300px;
-        bottom: 30px;
-        width: 20px;
-    }
-    &__main-text{
-        margin: 0px;;
-    }
-    &__sub-text{
-        margin: 0px;;
-    }
-    
-    
+    left: 77%;
+    top: 20%;
+    width: 70px;
+    padding: 3px 15px 3px 15px;
+    @include mixins.font-design(new-box);
+    @include mixins.flex;
+    @include mixins.flex-center;
+  }
+  &__icon {
+    position: relative;
+    left: 90%;
+    bottom: 12%;
+    width: 20px;
+  }
+  &__main-text {
+    margin: 15px 0px 0px 5px;
+    @include mixins.font-design(card-main-text);
+
+  }
+  &__sub-text {
+    margin: 0px 0px 0px 7px;
+    @include mixins.font-design(card-sub-text);
+  }
 }
