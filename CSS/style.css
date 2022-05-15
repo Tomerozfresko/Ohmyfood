@@ -382,21 +382,21 @@ body {
   right: 15px;
   border-radius: 50%;
   background-color: #9356DC;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   font-weight: 300;
   color: white;
   font-family: "roboto";
   padding: 5px;
 }
 .step__text {
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
@@ -427,7 +427,7 @@ body {
   top: 8%;
   max-width: 70px;
   padding: 3px 15px 3px 15px;
-  font-size: 1.6rem;
+  font-size: 0.8rem;
   font-weight: 500;
   color: #278870;
   font-family: "roboto";
@@ -443,14 +443,14 @@ body {
 }
 .card__main-text {
   margin: 15px 0px 0px 5px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
 }
 .card__sub-text {
   margin: 0px 0px 0px 7px;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #101010;
   font-family: "roboto";
@@ -467,7 +467,7 @@ body {
   text-decoration: none;
 }
 .logo__text {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";
@@ -491,7 +491,7 @@ body {
   border: 1px solid #101010;
   background-color: #e9e9e9;
   border: none;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #101010;
   font-family: "roboto";
@@ -506,22 +506,22 @@ body {
   padding: 20px;
 }
 .intrudction__main-text {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
   margin: Opx;
 }
 .intrudction__sub-text {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #101010;
   font-family: "roboto";
 }
 .intrudction__explore-link {
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
   font-size: 0.8rem;
-  font-weight: 300;
+  font-weight: 400;
   color: white;
   font-family: "roboto";
   padding: 10px;
@@ -547,7 +547,7 @@ body {
 }
 .footer__list-item {
   list-style: none;
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 300;
   color: white;
   font-family: "roboto";
@@ -561,7 +561,7 @@ body {
   text-align: left;
 }
 .logo__text--footer {
-  font-size: 1rem;
+  font-size: 0.5rem;
   font-weight: 500;
   color: white;
   font-family: "Shrikhand";
