@@ -6,8 +6,8 @@
   //   @include mixins.border;
   @include mixins.flex(column);
   justify-content: none;
-  max-height: 250px;
-  max-width: 95%;
+  height: 250px;
+  width: 95%;
   margin: Auto;
   margin-bottom: 10px;
   border-radius: 5px;
