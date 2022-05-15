@@ -366,6 +366,7 @@ body {
   margin: 20px 5px;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
 }
 .step__icon {
   color: #5d5d5d;
@@ -377,22 +378,28 @@ body {
 .step--purple {
   background-color: #f2eafb;
 }
-.step__number {
-  position: relative;
-  right: 15px;
-  border-radius: 50%;
+.step__text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #101010;
+  font-family: "roboto";
+}
+.step:before {
+  counter-increment: step;
+  content: counter(step) " ";
+  position: absolute;
+  right: 96%;
+  bottom: 30%;
+  border-radius: 100px;
   background-color: #9356DC;
   font-size: 0.8rem;
   font-weight: 300;
   color: white;
   font-family: "roboto";
   padding: 5px;
-}
-.step__text {
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: #101010;
-  font-family: "roboto";
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
 }
 
 .title {
@@ -400,6 +407,10 @@ body {
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
+}
+
+body {
+  counter-reset: step;
 }
 
 .card {
@@ -467,7 +478,7 @@ body {
   text-decoration: none;
 }
 .logo__text {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";

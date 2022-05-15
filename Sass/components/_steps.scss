@@ -11,6 +11,7 @@
   margin: 20px 5px;
   border-radius: 5px;
   @include mixins.shadow;
+  position: relative;
   &__icon {
     color: darken(colors.$lightgray, 60%);
     margin-right: 10px;
@@ -21,19 +22,30 @@
   &--purple {
     background-color: lighten(colors.$primary, 35%);
   }
-  &__number {
-    position: relative;
-    right: 15px;
-    border-radius: 50%;
+  &__text {
+    @include mixins.font-design(step);
+  }
+  &:before{
+    counter-increment: step;
+    content: counter(step) " ";
+    position: absolute;
+    right: 96%;
+    bottom: 30%;
+    border-radius: 100px;
     background-color: colors.$primary;
     @include mixins.font-design(step-number);
     padding: 5px;
-  }
-  &__text {
-    @include mixins.font-design(step);
+    height: 1.5rem;
+    width: 1.5rem;
+    text-align: center;
   }
 }
 
 .title {
-    @include mixins.font-design(title);
+  @include mixins.font-design(title);
 }
+
+body{
+  counter-reset: step;
+}
+
