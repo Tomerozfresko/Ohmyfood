@@ -33,15 +33,15 @@
   &__icon {
     position: absolute;
     left: 90%;
-    bottom: 25px;
-    width: 20px;
+    bottom: 15px;
+    font-size: 1.5rem;
   }
   &__main-text {
-    margin: 10px 0px 0px 5px;
+    margin: 20px 0px 0px 5px;
     @include mixins.font-design(card-main-text);
   }
   &__sub-text {
-    margin: 0px 0px 5px 7px;
+    margin: 5px 0px 10px 7px;
     @include mixins.font-design(card-sub-text);
   }
 }

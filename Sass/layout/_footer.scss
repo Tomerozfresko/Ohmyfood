@@ -12,10 +12,6 @@
   &__list-item {
     color: white;
   }
-  &__img {
-    width: 20ox;
-    height: 20px;
-  }
   &__list {
     padding-left: 3px;
     margin: 0px;
@@ -24,19 +20,21 @@
   &__list-item {
     list-style: none;
     @include mixins.font-design(list-item);
+    margin: 1px;
   }
 }
 
 .logo {
   &__link--footer {
     display: block;
-    margin: 0px;
+    margin: 2px;
     cursor: pointer;
     text-decoration: none;
     text-align: left;
   }
   &__text--footer {
     @include mixins.font-design(logo-footer);
+    margin: 5px;
   }
 }
 
