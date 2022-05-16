@@ -2,8 +2,12 @@
 @use "../Utils/colors";
 @use "../Utils/mixins";
 
+.cards-container {
+  background-color: colors.$lightgray;
+  margin-top: 30px;
+}
+
 .card {
-  //   @include mixins.border;
   @include mixins.flex(column);
   height: 250px;
   width: 95%;
@@ -13,11 +17,14 @@
   @include mixins.shadow;
   position: relative;
   &__image {
-    height: 80%;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+  }
+  &__footer {
+    // background-color: red;
   }
   &__new-box {
     background-color: colors.$Tetiary;
@@ -37,11 +44,15 @@
     font-size: 1.5rem;
   }
   &__main-text {
-    margin: 20px 0px 0px 5px;
     @include mixins.font-design(card-main-text);
+    background-color: red;
+    margin: 5px 5px;
   }
   &__sub-text {
-    margin: 5px 0px 10px 7px;
     @include mixins.font-design(card-sub-text);
+    background-color: red;
+    margin: 5px 5px;
+
+
   }
 }

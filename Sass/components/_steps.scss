@@ -9,15 +9,15 @@
   background-color: colors.$lightgray;
   padding: 10px;
   margin: 20px 5px;
-  border-radius: 5px;
+  border-radius: 20px;
   @include mixins.shadow;
   position: relative;
   &__icon {
     color: darken(colors.$lightgray, 60%);
     margin-right: 10px;
     margin-left: 10px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   &--purple {
     background-color: lighten(colors.$primary, 35%);
