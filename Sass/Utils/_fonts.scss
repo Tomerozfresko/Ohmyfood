@@ -82,4 +82,16 @@ $font-palette: (
     cl: colors.$white,
     ff: "roboto",
   ),
+  rest-name: (
+    fs: 1.5rem,
+    fw: 600,
+    cl: colors.$black,
+    ff: "Shrikhand",
+  ), 
+  menu-section-name: (
+    fs: 1rem,
+    fw: 300,
+    cl: colors.$black,
+    ff: "roboto",
+  )
 );

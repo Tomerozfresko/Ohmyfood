@@ -360,6 +360,10 @@ body {
 /**
  * Basic styles for links
  */
+.steps-container {
+  padding: 0.5rem;
+}
+
 .step {
   background-color: #f6f6f6;
   padding: 10px;
@@ -388,8 +392,6 @@ body {
   counter-increment: step;
   content: counter(step) " ";
   position: absolute;
-  right: 96%;
-  bottom: 30%;
   border-radius: 100px;
   background-color: #9356DC;
   font-size: 0.8rem;
@@ -399,6 +401,8 @@ body {
   padding: 5px;
   height: 1.5rem;
   width: 1.5rem;
+  left: -0.75rem;
+  bottom: 1rem;
   text-align: center;
 }
 
@@ -411,27 +415,32 @@ body {
 
 body {
   counter-reset: step;
+  width: 100%;
+  margin: 0px;
 }
 
 .cards-container {
   background-color: #f6f6f6;
-  margin-top: 30px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  height: 250px;
-  width: 95%;
-  margin: Auto;
-  margin-bottom: 10px;
+  height: 13rem;
+  width: 20rem;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
 }
 .card__image {
-  height: 100%;
   width: 100%;
+  height: 80%;
   object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -439,17 +448,14 @@ body {
 .card__new-box {
   background-color: #99E2D0;
   position: absolute;
-  left: 85%;
-  top: 5%;
-  max-width: 70px;
+  left: 15rem;
+  top: 1rem;
+  max-width: 70rem;
   padding: 3px 15px 3px 15px;
   font-size: 0.8rem;
   font-weight: 500;
   color: #278870;
   font-family: "roboto";
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 .card__icon {
   position: absolute;
@@ -457,40 +463,162 @@ body {
   bottom: 15px;
   font-size: 1.5rem;
 }
+.card__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.01rem;
+  padding: 5px;
+}
 .card__main-text {
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
-  background-color: red;
-  margin: 5px 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .card__sub-text {
   font-size: 1rem;
   font-weight: 300;
   color: #101010;
   font-family: "roboto";
-  background-color: red;
-  margin: 5px 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bastille {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__image-container {
+  width: 100%;
+  max-height: 32rem;
+  margin: auto;
+}
+.menu__image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: -4rem;
+  padding: 5px;
+}
+.menu__section-name {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #101010;
+  font-family: "roboto";
+  margin-bottom: 20px;
+}
+.menu__card {
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+}
+.menu__text--main {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101010;
+  font-family: "roboto";
+  margin: 0px;
+}
+.menu__footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.menu__footer--text {
+  color: black;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #101010;
+  font-family: "roboto";
+  margin: 0px;
+}
+.menu__footer--price {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #101010;
+  font-family: "roboto";
+  margin: 0px;
+  margin-right: 15px;
+}
+.menu__order-button {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  font-family: "roboto";
+  padding: 15px 30px;
+  border-radius: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 50%;
+}
+.menu__order-button-link {
+  text-decoration: none;
+  color: white;
+}
+
+.restaurantname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #101010;
+  font-family: "Shrikhand";
 }
 
 .logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0px;
+  border: 1px solid;
 }
 .logo__link {
   cursor: pointer;
   text-decoration: none;
+  border: 1px solid blue;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 .logo__text {
   font-size: 3rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";
-  margin: 0px;
-  margin-bottom: 10px;
+  margin: 0px 0px;
+  border: 1px solid;
+}
+.logo__back-button {
+  border: 1px solid;
+  position: absolute;
+  left: 4%;
+  top: 3%;
+  font-size: 2rem;
 }
 
 .location {
@@ -551,7 +679,7 @@ body {
 .footer {
   background-color: #101010;
   margin: auto;
-  width: 95%;
+  width: 100%;
 }
 .footer__list-item {
   color: white;

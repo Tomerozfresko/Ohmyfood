@@ -4,38 +4,35 @@
 
 .cards-container {
   background-color: colors.$lightgray;
-  margin-top: 30px;
+  gap:2rem;
+  @include mixins.flex(column);
+  padding:10px; 
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
   @include mixins.flex(column);
-  height: 250px;
-  width: 95%;
-  margin: Auto;
-  margin-bottom: 10px;
+  height: 13rem;
+  width: 20rem;
   border-radius: 5px;
   @include mixins.shadow;
   position: relative;
   &__image {
-    height: 100%;
     width: 100%;
+    height: 80%;
     object-fit: cover;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
-  &__footer {
-    // background-color: red;
-  }
   &__new-box {
     background-color: colors.$Tetiary;
     position: absolute;
-    left: 85%;
-    top: 5%;
-    max-width: 70px;
+    left: 15rem;
+    top: 1rem;
+    max-width: 70rem;
     padding: 3px 15px 3px 15px;
     @include mixins.font-design(new-box);
-    @include mixins.flex;
-    @include mixins.flex-center;
   }
   &__icon {
     position: absolute;
@@ -43,16 +40,24 @@
     bottom: 15px;
     font-size: 1.5rem;
   }
+  &__footer{
+    @include mixins.flex(column);
+    gap:0.01rem;
+    padding: 5px;
+  }
   &__main-text {
     @include mixins.font-design(card-main-text);
-    background-color: red;
-    margin: 5px 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   &__sub-text {
     @include mixins.font-design(card-sub-text);
-    background-color: red;
-    margin: 5px 5px;
-
-
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
+}
+
+.title{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
