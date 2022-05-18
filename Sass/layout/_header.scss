@@ -26,14 +26,14 @@
   &__back-button {
     border: 1px solid;
     position: absolute;
-    left: 4%;
-    top: 3%;
-    font-size: 2rem;
+    left: .5rem;
+    top: 1rem;
+    font-size: 1.5rem;
   }
 }
 
 .location {
-  // @include mixins.border;
+  @include mixins.border;
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
@@ -42,6 +42,7 @@
     margin: 10px 0px;
     position: relative;
     left: 2rem;
+    height: 1rem;
   }
   &__address-input {
     @include mixins.border;

@@ -4,14 +4,7 @@
 
 .restaurants-container {
   background-color: colors.$lightgray;
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  // grid-template-columns: 1fr;
-  // gap:2rem;
-  // @include mixins.flex(column);
-  // padding:10px; 
-  // flex-wrap: wrap;
-  // justify-content: center;
+  padding: 1rem;
 }
 
 .cards-container {
@@ -19,9 +12,10 @@
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: center;
   align-content: center;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   justify-items: center;
+  border: 1px solid;
 }
 
 .card {
@@ -53,24 +47,27 @@
     bottom: 15px;
     font-size: 1.5rem;
   }
-  &__footer{
-    @include mixins.flex(column);
-    gap:0.01rem;
-    padding: 5px;
-  }
   &__main-text {
     @include mixins.font-design(card-main-text);
     margin-top: 0px;
     margin-bottom: 0px;
+    border: 1px solid;
+    padding-left: 5px;
+
   }
   &__sub-text {
     @include mixins.font-design(card-sub-text);
     margin-top: 0px;
     margin-bottom: 0px;
+    border: 1px solid;
+    padding-left: 5px;
+
   }
 }
 
 .title{
-  margin-top: 0px;
-  margin-bottom: 0px;
+  // margin-top: 2rem;
+  // margin-bottom: 2rem;
+  // margin-left: .5rem;
+  border: 1px solid;
 }

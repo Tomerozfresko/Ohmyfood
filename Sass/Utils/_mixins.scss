@@ -1,25 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
-@use 'fonts';
-@use 'colors';
+@use "fonts";
+@use "colors";
 
-@mixin font-design ($type) {
+@mixin font-design($type) {
   $palette: map-get(fonts.$font-palette, $type);
   font-size: map-get($palette, fs);
   font-weight: map-get($palette, fw);
   color: map-get($palette, cl);
   font-family: map-get($palette, ff);
-
 }
 
-@mixin flex ($direction:row) {
+@mixin flex($direction: row) {
   display: flex;
   flex-direction: $direction;
 }
 
 @mixin flex-center {
-  justify-content:center;
+  justify-content: center;
 }
 
 @mixin border {
@@ -29,6 +28,3 @@
 @mixin shadow {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
-
