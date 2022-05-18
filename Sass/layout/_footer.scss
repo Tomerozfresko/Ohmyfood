@@ -10,24 +10,26 @@
   width: 100%;
   &__list {
     padding-left: 3px;
-    margin: 0px;
   }
   &__list-item {
     list-style: none;
     @include mixins.font-design(list-item);
-    padding: 0.3rem;
+    padding: .1rem;
   }
 }
 
 .logo {
   &__link--footer {
     display: block;
-    padding: 10px;
+    margin: 2px;
     cursor: pointer;
     text-decoration: none;
     text-align: left;
   }
   &__text--footer {
     @include mixins.font-design(logo-footer);
+    margin: 5px;
   }
 }
+
+// <div class="logo--footer"><a class="logo__link--footer" href="index.html"><h1 class="logo__text-footer">ohmyfood</h1></a></div>

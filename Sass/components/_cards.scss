@@ -15,7 +15,7 @@
   gap: 2rem;
   align-items: center;
   justify-items: center;
-  // border: 1px solid;
+  border: 1px solid;
 }
 
 .card {
@@ -51,7 +51,7 @@
     @include mixins.font-design(card-main-text);
     margin-top: 0px;
     margin-bottom: 0px;
-    // border: 1px solid;
+    border: 1px solid;
     padding-left: 5px;
 
   }
@@ -59,7 +59,7 @@
     @include mixins.font-design(card-sub-text);
     margin-top: 0px;
     margin-bottom: 0px;
-    // border: 1px solid;
+    border: 1px solid;
     padding-left: 5px;
 
   }
@@ -69,5 +69,5 @@
   // margin-top: 2rem;
   // margin-bottom: 2rem;
   // margin-left: .5rem;
-  // border: 1px solid;
+  border: 1px solid;
 }
