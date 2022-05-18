@@ -24,16 +24,15 @@
     // border: 1px solid;
   }
   &__back-button {
-    border: 1px solid;
+    // border: 1px solid;
     position: absolute;
-    left: .5rem;
+    left: 0.5rem;
     top: 1rem;
     font-size: 1.5rem;
   }
 }
 
 .location {
-  @include mixins.border;
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);

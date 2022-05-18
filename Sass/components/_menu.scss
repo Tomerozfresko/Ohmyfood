@@ -16,8 +16,13 @@
   }
 }
 
+.section__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 .menu__container {
-  border: 1px solid;
+  // border: 1px solid;
   margin-top: -0.75rem;
   background-color: darken(colors.$lightgray, 10%);
   border-top-right-radius: 1rem;
@@ -27,42 +32,65 @@
 }
 
 .restaurantname {
-  border: 1px solid;
+  // border: 1px solid;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   @include mixins.flex;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
+  background-color: darken(colors.$lightgray, 10%);
+  @include mixins.font-design(rest-name);
   &__icon {
     font-size: 1.5rem;
   }
 }
 
 .section {
-  border: 1px solid;
-  background-color: aqua;
+  // border: 1px solid;
+  background-color: darken(colors.$lightgray, 10%);
   display: grid;
   justify-content: center;
   gap: 1rem;
+  @include mixins.font-design(card-main-text);
 }
 
 .dish {
-  background-color: red;
+  width: 22rem;
   &__firstline {
-    border: 1px solid;
+    background-color: colors.$white;
+    // border: 1px solid;
     margin: 0px;
     padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    @include mixins.font-design(card-main-text);
   }
   &__secondline {
-    border: 1px solid;
+    // border: 1px solid;
     margin: 0px;
     @include mixins.flex;
     justify-content: space-between;
     padding: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: colors.$white;
     &__text {
       margin: 0px;
+      @include mixins.font-design(card-sub-text);
     }
     &__price {
       margin: 0px;
+      @include mixins.font-design(card-sub-text);
     }
   }
+}
+
+.menu__order-button {
+  background: linear-gradient(to bottom, colors.$secondary, colors.$primary);
+  @include mixins.font-design(button);
+  padding: 15px 30px;
+  border-radius: 35px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
