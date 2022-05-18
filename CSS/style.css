@@ -361,16 +361,21 @@ body {
  * Basic styles for links
  */
 .steps-container {
-  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .step {
   background-color: #f6f6f6;
   padding: 10px;
-  margin: 20px 5px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
+  width: 20rem;
 }
 .step__icon {
   color: #5d5d5d;
@@ -419,14 +424,18 @@ body {
   margin: 0px;
 }
 
-.cards-container {
+.restaurants-container {
   background-color: #f6f6f6;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  flex-wrap: wrap;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .card {
@@ -595,12 +604,11 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid;
+  position: static;
 }
 .logo__link {
   cursor: pointer;
   text-decoration: none;
-  border: 1px solid blue;
   position: relative;
   display: flex;
   align-items: center;
@@ -611,7 +619,6 @@ body {
   color: #101010;
   font-family: "Shrikhand";
   margin: 0px 0px;
-  border: 1px solid;
 }
 .logo__back-button {
   border: 1px solid;
@@ -678,16 +685,10 @@ body {
 
 .footer {
   background-color: #101010;
-  margin: auto;
   width: 100%;
-}
-.footer__list-item {
-  color: white;
 }
 .footer__list {
   padding-left: 3px;
-  margin: 0px;
-  margin-bottom: 10px;
 }
 .footer__list-item {
   list-style: none;
@@ -695,7 +696,7 @@ body {
   font-weight: 300;
   color: white;
   font-family: "roboto";
-  margin: 1px;
+  padding: 0.1rem;
 }
 
 .logo__link--footer {

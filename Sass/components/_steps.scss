@@ -6,18 +6,22 @@
 @use "../Utils/mixins";
 
 .steps-container{
-  // background-color: red;
-  padding:0.5rem;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+  padding: 1rem;
 
+}
 
 .step {
   background-color: colors.$lightgray;
   padding: 10px;
-  margin: 20px 5px;
   border-radius: 20px;
   @include mixins.shadow;
   position: relative;
+  width: 20rem;
   &__icon {
     color: darken(colors.$lightgray, 60%);
     margin-right: 10px;

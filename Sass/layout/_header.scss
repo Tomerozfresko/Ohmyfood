@@ -8,11 +8,12 @@
 .logo {
   @include mixins.flex;
   @include mixins.flex-center;
-  border: 1px solid;
+  // border: 1px solid;
+  position: static;
   &__link {
     cursor: pointer;
     text-decoration: none;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     position: relative;
     display: flex;
     align-items: center;
@@ -20,7 +21,7 @@
   &__text {
     @include mixins.font-design(logo);
     margin: 0px 0px;
-    border: 1px solid;
+    // border: 1px solid;
   }
   &__back-button {
     border: 1px solid;

@@ -2,13 +2,26 @@
 @use "../Utils/colors";
 @use "../Utils/mixins";
 
-.cards-container {
+.restaurants-container {
   background-color: colors.$lightgray;
-  gap:2rem;
-  @include mixins.flex(column);
-  padding:10px; 
-  flex-wrap: wrap;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  // grid-template-columns: 1fr;
+  // gap:2rem;
+  // @include mixins.flex(column);
+  // padding:10px; 
+  // flex-wrap: wrap;
+  // justify-content: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-content: center;
+  align-content: center;
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
 }
 
 .card {
