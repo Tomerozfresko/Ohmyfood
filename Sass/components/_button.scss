@@ -1,0 +1,15 @@
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
+
+
+.button {
+    border: 1px solid;
+    margin: auto;
+    background: linear-gradient(to bottom, colors.$secondary, colors.$primary);
+    @include mixins.font-design(button);
+    padding: 15px 30px;
+    border-radius: 35px;
+    text-decoration: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
