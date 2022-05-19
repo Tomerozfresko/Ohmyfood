@@ -615,8 +615,11 @@ body {
 }
 
 .button {
-  border: 1px solid;
+  display: block;
+  text-align: center;
+  width: 15rem;
   margin: auto;
+  margin-top: 25px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   font-size: 1rem;
   font-weight: 400;
