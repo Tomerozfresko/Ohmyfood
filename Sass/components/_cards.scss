@@ -10,64 +10,75 @@
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  justify-content: center;
-  align-content: center;
   gap: 2rem;
-  align-items: center;
-  justify-items: center;
-  border: 1px solid;
 }
 
 .card {
-  @include mixins.flex(column);
-  height: 13rem;
-  width: 20rem;
-  border-radius: 5px;
+  background-image: url(/images/restaurants/TheFullPalette.jpg);
+  background-size: cover;
+  padding: 8rem 0 0;
+  border-radius: 10px;
   @include mixins.shadow;
   position: relative;
-  &__image {
+  overflow: hidden;
+  &::after {
+    content: "";
     width: 100%;
-    height: 80%;
-    object-fit: cover;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    height: 100%;
+  }
+  &__link {
+    // background-color: red;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  &--theenchantedplate {
+    background-image: url(/images/restaurants/TheEnchantedPlate.jpg);
+  }
+  &--bastille {
+    background-image: url(/images/restaurants/Bastille.jpg);
+  }
+  &--legourmand {
+    background-image: url(/images/restaurants/LeGourmand.jpg);
+  }
+  &__footer {
+    background-color: colors.$white;
+    padding: 5px;
+    margin: 0;
+    @include mixins.font-design(card-main-text);
+    &__main {
+      line-height: 1.5rem;
+      margin: 0;
+    }
+    &__sub {
+      margin: 0;
+      line-height: 1.5rem;
+      position: relative;
+      &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 300;
+        content: "\f004";
+        position: absolute;
+        right: 1rem;
+        font-size: 24px;
+        bottom: 0.9rem;
+        z-index: 1000;
+        &:hover {
+          background-color: red;
+        }
+      }
+    }
   }
   &__new-box {
     background-color: colors.$Tetiary;
     position: absolute;
     left: 15rem;
     top: 1rem;
-    max-width: 70rem;
+    min-width: 5rem;
+    text-align: center;
     padding: 3px 15px 3px 15px;
     @include mixins.font-design(new-box);
   }
-  &__icon {
-    position: absolute;
-    left: 90%;
-    bottom: 15px;
-    font-size: 1.5rem;
-  }
-  &__main-text {
-    @include mixins.font-design(card-main-text);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: 1px solid;
-    padding-left: 5px;
-
-  }
-  &__sub-text {
-    @include mixins.font-design(card-sub-text);
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border: 1px solid;
-    padding-left: 5px;
-
-  }
-}
-
-.title{
-  // margin-top: 2rem;
-  // margin-bottom: 2rem;
-  // margin-left: .5rem;
-  border: 1px solid;
 }
