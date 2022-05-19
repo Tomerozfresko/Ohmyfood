@@ -5,14 +5,11 @@
 @use "../Utils/colors";
 @use "../Utils/mixins";
 
-
 .location {
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
   ;
-
-
   &__icon {
     color: colors.$black;
     margin: 10px 0px;
@@ -29,7 +26,6 @@
     text-align: center;
   }
 }
-
 .intrudction {
   background-color: colors.$lightgray;
   @include mixins.flex(column);
@@ -52,7 +48,6 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
 }
-
 .title {
   @include mixins.font-design(title);
 }

@@ -417,7 +417,6 @@ body {
 }
 
 .card {
-  background-image: url(/images/restaurants/TheFullPalette.jpg);
   background-size: cover;
   padding: 8rem 0 0;
   border-radius: 10px;
@@ -445,14 +444,17 @@ body {
   right: 0;
   left: 0;
 }
+.card--thefullplate {
+  background-image: url(../images/restaurants/TheFullPalette.jpg);
+}
 .card--theenchantedplate {
-  background-image: url(/images/restaurants/TheEnchantedPlate.jpg);
+  background-image: url(../images/restaurants/TheEnchantedPlate.jpg);
 }
 .card--bastille {
-  background-image: url(/images/restaurants/Bastille.jpg);
+  background-image: url(../images/restaurants/Bastille.jpg);
 }
 .card--legourmand {
-  background-image: url(/images/restaurants/LeGourmand.jpg);
+  background-image: url(../images/restaurants/LeGourmand.jpg);
 }
 .card__footer {
   background-color: white;
