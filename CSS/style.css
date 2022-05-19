@@ -486,6 +486,7 @@ body {
   margin: 0;
   line-height: 1.5rem;
   position: relative;
+  font-weight: 300;
 }
 .card__footer__sub::after {
   font-family: "Font Awesome 5 Free";
@@ -704,6 +705,7 @@ body {
 .footer {
   background-color: #101010;
   width: 100%;
+  margin-top: 2rem;
 }
 .footer__list {
   padding-left: 3px;
