@@ -22,7 +22,11 @@ html {
 }
 
 body{
-width: 95vw;
+counter-reset: step;
+}
+
+body {
+
 }
 
 /**

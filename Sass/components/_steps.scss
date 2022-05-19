@@ -5,39 +5,24 @@
 @use "../Utils/colors";
 @use "../Utils/mixins";
 
-
-.how-it-works-container{
-  padding: 10px;
-}
-.steps-container{
+.steps-container {
+  list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap:1rem;
-  padding: 1rem;
-  // border: 1px solid;
-}
+  gap: 2rem;
+  flex-wrap: wrap;
 
+}
 .step {
   background-color: colors.$lightgray;
-  padding: 10px;
+  padding: 1.2rem;
   border-radius: 20px;
   @include mixins.shadow;
   position: relative;
   width: 20rem;
-  &__icon {
-    color: darken(colors.$lightgray, 60%);
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+  @include mixins.font-design(step);
   &--purple {
     background-color: lighten(colors.$primary, 35%);
-  }
-  &__text {
-    @include mixins.font-design(step);
   }
   &:before {
     counter-increment: step;
@@ -50,17 +35,10 @@
     height: 1.5rem;
     width: 1.5rem;
     left: -0.75rem;
-    bottom:1rem;
+    bottom: 1rem;
     text-align: center;
   }
-}
-
-.title {
-  @include mixins.font-design(title);
-}
-
-body {
-  counter-reset: step;
-  width: 100%;
-  margin: 0px;
+  i {
+    margin-right: 1rem;
+  }
 }

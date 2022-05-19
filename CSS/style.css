@@ -354,48 +354,34 @@ html {
 }
 
 body {
-  width: 95vw;
+  counter-reset: step;
 }
 
 /**
  * Basic styles for links
  */
-.how-it-works-container {
-  padding: 10px;
-}
-
 .steps-container {
+  list-style-type: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .step {
   background-color: #f6f6f6;
-  padding: 10px;
+  padding: 1.2rem;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   width: 20rem;
-}
-.step__icon {
-  color: #5d5d5d;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.step--purple {
-  background-color: #f2eafb;
-}
-.step__text {
   font-size: 1rem;
   font-weight: 300;
   color: #101010;
   font-family: "roboto";
+}
+.step--purple {
+  background-color: #f2eafb;
 }
 .step:before {
   counter-increment: step;
@@ -414,28 +400,19 @@ body {
   bottom: 1rem;
   text-align: center;
 }
-
-.title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #101010;
-  font-family: "roboto";
-}
-
-body {
-  counter-reset: step;
-  width: 100%;
-  margin: 0px;
+.step i {
+  margin-right: 1rem;
 }
 
 .restaurants-container {
   background-color: #f6f6f6;
   padding: 1rem;
+  min-width: 100%;
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
 }
 
@@ -449,9 +426,17 @@ body {
   overflow: hidden;
 }
 .card::after {
-  content: "";
-  width: 100%;
-  height: 100%;
+  content: "New";
+  background-color: #99E2D0;
+  position: absolute;
+  text-align: center;
+  padding: 3px 15px 3px 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #278870;
+  font-family: "roboto";
+  top: 1rem;
+  right: 1rem;
 }
 .card__link {
   position: absolute;
@@ -472,7 +457,6 @@ body {
 .card__footer {
   background-color: white;
   padding: 5px;
-  margin: 0;
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
@@ -497,22 +481,6 @@ body {
   font-size: 24px;
   bottom: 0.9rem;
   z-index: 1000;
-}
-.card__footer__sub::after:hover {
-  background-color: red;
-}
-.card__new-box {
-  background-color: #99E2D0;
-  position: absolute;
-  left: 15rem;
-  top: 1rem;
-  min-width: 5rem;
-  text-align: center;
-  padding: 3px 15px 3px 15px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: #278870;
-  font-family: "roboto";
 }
 
 .menu__image-container {
@@ -620,30 +588,26 @@ body {
 }
 
 .logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: static;
-}
-.logo__link {
-  cursor: pointer;
-  text-decoration: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.logo__text {
+  display: block;
+  text-align: center;
   font-size: 3rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";
-  margin: 0px 0px;
+  text-decoration: none;
 }
 .logo__back-button {
   position: absolute;
   left: 0.5rem;
   top: 1rem;
   font-size: 1.5rem;
+}
+.logo--footer {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+  font-family: "Shrikhand";
+  text-decoration: none;
 }
 
 .location {
@@ -661,7 +625,7 @@ body {
 }
 .location__address-input {
   border: 1px solid #101010;
-  background-color: #e9e9e9;
+  background: transparent;
   border: none;
   font-size: 1rem;
   font-weight: 300;
@@ -702,6 +666,13 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #101010;
+  font-family: "roboto";
+}
+
 .footer {
   background-color: #101010;
   width: 100%;
@@ -711,27 +682,13 @@ body {
   padding-left: 3px;
   margin: 0px;
 }
-.footer__list-item {
+.footer__item {
   list-style: none;
   font-size: 1rem;
   font-weight: 300;
   color: white;
   font-family: "roboto";
   padding: 0.3rem;
-}
-
-.logo__link--footer {
-  display: block;
-  padding: 10px;
-  cursor: pointer;
-  text-decoration: none;
-  text-align: left;
-}
-.logo__text--footer {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: white;
-  font-family: "Shrikhand";
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+@use "../Utils/fonts";
+@use "../Utils/colors";
+@use "../Utils/mixins";
+
+.logo {
+  display: block;
+  text-align: center;
+  @include mixins.font-design(logo);
+  text-decoration: none;
+  &__back-button {
+    // border: 1px solid;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+    font-size: 1.5rem;
+  }
+  &--footer {
+    @include mixins.font-design(logo-footer);
+    text-decoration: none;
+  }
+}

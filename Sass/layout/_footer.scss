@@ -13,22 +13,11 @@
     padding-left: 3px;
     margin: 0px;
   }
-  &__list-item {
+  &__item {
     list-style: none;
     @include mixins.font-design(list-item);
     padding: 0.3rem;
   }
 }
 
-.logo {
-  &__link--footer {
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: left;
-  }
-  &__text--footer {
-    @include mixins.font-design(logo-footer);
-  }
-}
+

@@ -5,37 +5,14 @@
 @use "../Utils/colors";
 @use "../Utils/mixins";
 
-.logo {
-  @include mixins.flex;
-  @include mixins.flex-center;
-  // border: 1px solid;
-  position: static;
-  &__link {
-    cursor: pointer;
-    text-decoration: none;
-    // border: 1px solid blue;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  &__text {
-    @include mixins.font-design(logo);
-    margin: 0px 0px;
-    // border: 1px solid;
-  }
-  &__back-button {
-    // border: 1px solid;
-    position: absolute;
-    left: 0.5rem;
-    top: 1rem;
-    font-size: 1.5rem;
-  }
-}
 
 .location {
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
+  ;
+
+
   &__icon {
     color: colors.$black;
     margin: 10px 0px;
@@ -45,7 +22,8 @@
   }
   &__address-input {
     @include mixins.border;
-    background-color: darken(colors.$lightgray, 5%);
+    // background-color: darken(colors.$lightgray, 5%);
+    background: transparent;
     border: none;
     @include mixins.font-design(sub);
     text-align: center;
@@ -73,4 +51,8 @@
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
+}
+
+.title {
+  @include mixins.font-design(title);
 }
