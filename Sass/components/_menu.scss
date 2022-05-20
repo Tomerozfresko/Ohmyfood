@@ -38,12 +38,16 @@
 
 .section__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 2rem;
+  gap: 2rem;
+  // border: 1px solid;
 }
 
 .section {
   // border: 1px solid;
   display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
   gap: 1rem;
   &__name {
@@ -67,7 +71,7 @@
 .dish {
   // border: 1px solid;
   display: grid;
-  width: 23rem;
+  max-width: 35rem;
   border-radius: 10px;
   @include mixins.shadow;
   overflow: hidden;
@@ -75,11 +79,12 @@
 
   &__firstline {
     background-color: colors.$white;
-    // border: 1px solid;
     margin: 0px;
     padding: 5px;
     padding-left: 10px;
     @include mixins.font-design(card-main-text);
+    // border: 1px solid;
+
   }
   &__secondline {
     // border: 1px solid;
@@ -93,11 +98,16 @@
     &__text {
       margin: 0px;
       @include mixins.font-design(card-sub-text);
+      // border: 1px solid;
+
     }
     &__price {
       margin: 0px;
       @include mixins.font-design(card-sub-text);
       font-weight: 600;
+      margin-right: 1rem;
+      // border: 1px solid;
+
     }
   }
 }

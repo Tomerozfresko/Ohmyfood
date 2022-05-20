@@ -9,7 +9,6 @@
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
-  ;
   &__icon {
     color: colors.$black;
     margin: 10px 0px;
@@ -42,4 +41,12 @@
 }
 .title {
   @include mixins.font-design(title);
+}
+
+.back__button {
+  text-decoration: none;
+  position: absolute;
+  top: 1.1rem;
+  left: 2rem;
+  font-size: 2rem;
 }

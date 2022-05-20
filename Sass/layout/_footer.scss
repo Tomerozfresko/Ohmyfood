@@ -18,6 +18,8 @@
     @include mixins.font-design(list-item);
     padding: 0.3rem;
   }
+  .email__link {
+    text-decoration: none;
+    @include mixins.font-design(list-item);
+  }
 }
-
-
