@@ -550,7 +550,7 @@ body {
 
 .dish {
   display: grid;
-  width: 25rem;
+  width: 23rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
