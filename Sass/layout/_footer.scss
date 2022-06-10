@@ -9,8 +9,9 @@
   background-color: colors.$black;
   width: 100%;
   margin-top: 2rem;
+  height: fit-content;
   &__list {
-    padding-left: 3px;
+    padding-left: 10px;
     margin: 0px;
   }
   &__item {

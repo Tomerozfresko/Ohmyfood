@@ -631,6 +631,9 @@ body {
   color: white;
   font-family: "Shrikhand";
   text-decoration: none;
+  height: 50px;
+  padding: 20px 0px 20px 10px;
+  display: inline-block;
 }
 
 .button {
@@ -719,9 +722,10 @@ body {
   background-color: #101010;
   width: 100%;
   margin-top: 2rem;
+  height: fit-content;
 }
 .footer__list {
-  padding-left: 3px;
+  padding-left: 10px;
   margin: 0px;
 }
 .footer__item {
