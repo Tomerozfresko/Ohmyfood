@@ -552,13 +552,23 @@ body {
 }
 
 .dish {
-  display: grid;
+  display: flex;
   max-width: 35rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   overflow: hidden;
-  height: 4rem;
+  height: 100%;
   position: relative;
+}
+.dish__text {
+  border: 1px solid;
+  width: 100%;
+}
+.dish:hover .reservation-animation {
+  transform: scaleX(2);
+}
+.dish:hover .test {
+  transform: rotate(360deg);
 }
 .dish__firstline {
   background-color: white;
@@ -569,8 +579,10 @@ body {
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
+  border: 1px solid;
 }
 .dish__secondline {
+  border: 1px solid;
   margin: 0px;
   display: flex;
   flex-direction: row;
@@ -595,19 +607,19 @@ body {
   font-weight: 600;
   margin-right: 1rem;
 }
-.dish:hover::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  content: "\f00c";
-  background: #99E2D0;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 85%;
-  animation: itemAppear 0.6s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
+
+.reservation-animation {
+  border: 1px solid;
+  width: auto;
+  transform: scaleX(0);
+  transition: all 400ms;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #99E2D0;
+  font-size: 24px;
+  transform-origin: 50% 50%;
 }
 
 .logo {

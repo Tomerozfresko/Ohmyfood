@@ -70,31 +70,46 @@
 
 .dish {
   // border: 1px solid;
-  display: grid;
+  display: flex;
   max-width: 35rem;
   border-radius: 10px;
   @include mixins.shadow;
   overflow: hidden;
-  height: 4rem;
+  height: 100%;
   position: relative;
 
+  &__text {
+    border: 1px solid;
+    width: 100%;
+    // overflow: scroll;
+  }
+  &:hover {
+    .reservation-animation {
+      width: 50px;
+      // animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      //   both;
+    }
+    .test {
+      // transform: rotate(360deg);
+    }
+  }
   &__firstline {
     background-color: colors.$white;
     margin: 0px;
     padding: 5px;
     padding-left: 10px;
     @include mixins.font-design(card-main-text);
-    // border: 1px solid;
+    border: 1px solid;
   }
   &__secondline {
-    // border: 1px solid;
+    border: 1px solid;
     margin: 0px;
     @include mixins.flex;
     justify-content: space-between;
     padding: 5px;
     padding-left: 10px;
-
     background-color: colors.$white;
+
     &__text {
       margin: 0px;
       @include mixins.font-design(card-sub-text);
@@ -108,29 +123,17 @@
       // border: 1px solid;
     }
   }
-  &:hover {
-    &::after {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 600;
-      content: "\f00c";
-      background: colors.$Tetiary;
-      // transform: rotate(-1turn);
-      // transition: transform 5000ms ease-in-out;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      top: 0;
-      left: 85%;
-      // vertical-align: middle;
-      // text-align: center;
-      // line-height: 50px;
-      //
-
-      animation: itemAppear 0.6s;
-      animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-      animation-fill-mode: both;
-
-    
-    }
-  }
+}
+.reservation-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0px;
+  transition: all 400ms;
+  color: colors.$white;
+  background-color: colors.$Tetiary;
+  font-size: 24px;
+  transform-origin: 50% 50%;
+  // transform:scaleX(1);
+  // animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
