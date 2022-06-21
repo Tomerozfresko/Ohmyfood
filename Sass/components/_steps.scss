@@ -11,6 +11,7 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  padding: 0;
 }
 .step {
   background-color: colors.$lightgray;
@@ -44,4 +45,8 @@
 
 .step--purple i {
   color: colors.$primary;
+}
+
+.intruduction {
+  padding: 1rem;
 }

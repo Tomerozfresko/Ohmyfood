@@ -66,16 +66,45 @@
       line-height: 1.5rem;
       position: relative;
       font-weight: 300;
-      &::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 300;
-        content: "\f004";
-        position: absolute;
-        right: 1rem;
-        font-size: 24px;
-        bottom: 0.9rem;
-        z-index: 1000;
-      }
+      // &::after {
+      //   font-family: "Font Awesome 5 Free";
+      //   font-weight: 300;
+      //   content: "\f004";
+      //   position: absolute;
+      //   right: 1rem;
+      //   font-size: 24px;
+      //   bottom: 0.9rem;
+      //   z-index: 1000;
+      // }
     }
+  }
+}
+
+.heart {
+  font-weight: 300;
+  position: absolute;
+  right: 1rem;
+  font-size: 24px;
+  bottom: 1rem;
+  z-index: 1000;
+  opacity: 100%;
+  &:hover {
+    color: red;
+    opacity: 0%;
+  }
+}
+
+.heart--full {
+  font-weight: 300;
+  position: absolute;
+  right: 1rem;
+  font-size: 24px;
+  bottom: 1rem;
+  z-index: 1000;
+  opacity: 0%;
+
+  &:hover {
+    color: colors.$primary;
+    opacity: 100%;
   }
 }

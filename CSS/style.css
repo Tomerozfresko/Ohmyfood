@@ -355,6 +355,7 @@ html {
 
 body {
   counter-reset: step;
+  margin: 0;
 }
 
 /**
@@ -366,6 +367,7 @@ body {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .step {
@@ -406,6 +408,10 @@ body {
 
 .step--purple i {
   color: #9356DC;
+}
+
+.intruduction {
+  padding: 1rem;
 }
 
 .restaurants-container {
@@ -478,15 +484,33 @@ body {
   position: relative;
   font-weight: 300;
 }
-.card__footer__sub::after {
-  font-family: "Font Awesome 5 Free";
+
+.heart {
   font-weight: 300;
-  content: "\f004";
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 0.9rem;
+  bottom: 1rem;
   z-index: 1000;
+  opacity: 100%;
+}
+.heart:hover {
+  color: red;
+  opacity: 0%;
+}
+
+.heart--full {
+  font-weight: 300;
+  position: absolute;
+  right: 1rem;
+  font-size: 24px;
+  bottom: 1rem;
+  z-index: 1000;
+  opacity: 0%;
+}
+.heart--full:hover {
+  color: #9356DC;
+  opacity: 100%;
 }
 
 .menu__image {
@@ -625,6 +649,33 @@ body {
   opacity: 0;
 }
 
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.entrees,
+.main_dish,
+.desserts {
+  animation: itemAppear 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
+  transform: scale(0);
+}
+
+.entrees {
+  animation-delay: 0.2s;
+}
+
+.main_dish {
+  animation-delay: 0.4s;
+}
+
+.desserts {
+  animation-delay: 0.6s;
+}
+
 .logo {
   display: block;
   text-align: center;
@@ -670,111 +721,9 @@ body {
 }
 .button:hover {
   transform: scale(1.05);
-  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.loader {
-  background: radial-gradient(white, #99E2D0);
-  bottom: 0;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 99999;
-  animation: check 3s ease;
-  animation-fill-mode: forwards;
-}
-
-.loader-inner {
-  bottom: 0;
-  height: 60px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-}
-
-.loader-line-wrap {
-  animation: spin 2000ms cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
-  box-sizing: border-box;
-  height: 50px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  transform-origin: 50% 100%;
-  width: 100px;
-}
-
-.loader-line {
-  border: 4px solid transparent;
-  border-radius: 100%;
-  box-sizing: border-box;
-  height: 100px;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-}
-
-.loader-line-wrap:nth-child(1) {
-  animation-delay: -50ms;
-}
-
-.loader-line-wrap:nth-child(2) {
-  animation-delay: -100ms;
-}
-
-.loader-line-wrap:nth-child(3) {
-  animation-delay: -150ms;
-}
-
-.loader-line-wrap:nth-child(4) {
-  animation-delay: -200ms;
-}
-
-.loader-line-wrap:nth-child(5) {
-  animation-delay: -250ms;
-}
-
-.loader-line-wrap:nth-child(1) .loader-line {
-  border-color: hsl(0deg, 80%, 60%);
-  height: 90px;
-  width: 90px;
-  top: 7px;
-}
-
-.loader-line-wrap:nth-child(2) .loader-line {
-  border-color: hsl(60deg, 80%, 60%);
-  height: 76px;
-  width: 76px;
-  top: 14px;
-}
-
-.loader-line-wrap:nth-child(3) .loader-line {
-  border-color: hsl(120deg, 80%, 60%);
-  height: 62px;
-  width: 62px;
-  top: 21px;
-}
-
-.loader-line-wrap:nth-child(4) .loader-line {
-  border-color: hsl(180deg, 80%, 60%);
-  height: 48px;
-  width: 48px;
-  top: 28px;
-}
-
-.loader-line-wrap:nth-child(5) .loader-line {
-  border-color: hsl(240deg, 80%, 60%);
-  height: 34px;
-  width: 34px;
-  top: 35px;
+  box-shadow: rgba(0, 0, 0, 0.94) 0px 3px 10px;
+  animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
 
 @keyframes spin {
@@ -849,8 +798,8 @@ body {
 .back__button {
   text-decoration: none;
   position: absolute;
-  top: 1.1rem;
-  left: 2rem;
+  top: 0.8rem;
+  left: 0.5rem;
   font-size: 2rem;
 }
 

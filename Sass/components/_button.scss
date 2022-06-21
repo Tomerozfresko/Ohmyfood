@@ -18,13 +18,12 @@
   transition: all 400ms;
   &:hover {
     transform: scale(1.05);
-    // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 10px;
-    animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    // background: lighten($color: colors.$primary, $amount: .05%);
-    // background: linear-gradient(
-    //   to bottom,
-    //   colors.$secondary,
-    //   colors.$primary
-    //); //required to lighten the color while hovering
+    box-shadow: rgba(0, 0, 0, 0.94) 0px 3px 10px;
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: linear-gradient(
+      to bottom,
+      lighten(colors.$secondary, 5%),
+      lighten(colors.$primary, 5%)
+    );
   }
 }

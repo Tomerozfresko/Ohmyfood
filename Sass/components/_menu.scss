@@ -144,3 +144,33 @@
   transform-origin: right;
   opacity: 0;
 }
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  // 50% {
+  //   transform: scale(0.5);
+  // }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.entrees,
+.main_dish,
+.desserts {
+  animation: itemAppear 1.5s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
+  transform: scale(0);
+}
+
+.entrees {
+  animation-delay: 0.2s;
+}
+.main_dish {
+  animation-delay: 0.4s;
+}
+
+.desserts {
+  animation-delay: 0.6s;
+}

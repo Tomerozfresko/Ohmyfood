@@ -21,15 +21,11 @@ html {
   box-sizing: inherit;
 }
 
-body{
-counter-reset: step;
-}
-
 body {
-
+  counter-reset: step;
+  margin: 0;
 }
 
 /**
  * Basic styles for links
  */
-
