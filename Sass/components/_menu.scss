@@ -69,7 +69,6 @@
 }
 
 .dish {
-  // border: 1px solid;
   display: flex;
   max-width: 35rem;
   border-radius: 10px;
@@ -79,19 +78,15 @@
   position: relative;
 
   &__text {
-    border: 1px solid;
     width: 100%;
-    // overflow: scroll;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    // to think about adding overflow with three points option
   }
   &:hover {
     .reservation-animation {
       width: 50px;
-      color: red;
-      // animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-      //   both;
-    }
-    .test {
-      // transform: rotate(360deg);
+      opacity: 1;
     }
   }
   &__firstline {
@@ -100,10 +95,14 @@
     padding: 5px;
     padding-left: 10px;
     @include mixins.font-design(card-main-text);
-    border: 1px solid;
+
+    // max-width: 480px;
+    // white-space: nowrap;
+    // overflow: hidden !important;
+    // text-overflow: ellipsis;
   }
   &__secondline {
-    border: 1px solid;
+    // border: 1px solid;
     margin: 0px;
     @include mixins.flex;
     justify-content: space-between;
@@ -111,10 +110,18 @@
     padding-left: 10px;
     background-color: colors.$white;
 
+    // max-width: 480px;
+    // white-space: nowrap;
+    // // overflow: hidden !important;
+    // text-overflow: ellipsis;
+
     &__text {
       margin: 0px;
       @include mixins.font-design(card-sub-text);
       // border: 1px solid;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
     }
     &__price {
       margin: 0px;
@@ -134,7 +141,6 @@
   color: colors.$white;
   background-color: colors.$Tetiary;
   font-size: 24px;
-  transform-origin: 50% 50%;
-  // transform:scaleX(1);
-  // animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transform-origin: right;
+  opacity: 0;
 }
