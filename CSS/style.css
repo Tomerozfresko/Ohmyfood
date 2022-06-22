@@ -736,6 +736,10 @@ body {
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
 
+.button--menu {
+  margin: 2rem auto 4rem auto;
+}
+
 .loader {
   background: #f6f6f6;
   bottom: 0;
