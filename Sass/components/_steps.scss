@@ -1,9 +1,7 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
 @use "../Utils/fonts";
 @use "../Utils/colors";
 @use "../Utils/mixins";
+@use "../Utils/variables";
 
 .steps-container {
   list-style-type: none;
@@ -17,7 +15,8 @@
   background-color: colors.$lightgray;
   padding: 1.2rem;
   border-radius: 20px;
-  @include mixins.shadow;
+  // @include mixins.shadow;
+  box-shadow: variables.$shadow;
   position: relative;
   width: 20rem;
   @include mixins.font-design(step);

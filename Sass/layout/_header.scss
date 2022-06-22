@@ -17,7 +17,7 @@
     height: 1rem;
   }
   &__address-input {
-    @include mixins.border;
+    // @include mixins.border;
     // background-color: darken(colors.$lightgray, 5%);
     background: transparent;
     border: none;
