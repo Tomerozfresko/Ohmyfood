@@ -4,6 +4,7 @@
 @use "../Utils/fonts";
 @use "../Utils/colors";
 @use "../Utils/mixins";
+@use "../Utils/variables";
 
 .location {
   @include mixins.flex;
@@ -17,8 +18,6 @@
     height: 1rem;
   }
   &__address-input {
-    // @include mixins.border;
-    // background-color: darken(colors.$lightgray, 5%);
     background: transparent;
     border: none;
     @include mixins.font-design(sub);
@@ -30,7 +29,7 @@
   @include mixins.flex(column);
   text-align: center;
   padding: 20px;
-  // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  // box-shadow: variables.$shadow;//do i need to add shadow?
   &__main-text {
     @include mixins.font-design(title);
     margin: Opx;

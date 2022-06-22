@@ -1,11 +1,16 @@
-// -----------------------------------------------------------------------------
-// Graphic identity - Fonts
-// -----------------------------------------------------------------------------
+//main
+$primary: #9356dc;
+$secondary: #ff79da;
+$Tetiary: #99e2d0;
 
-$primary:#9356DC;
-$secondary:#FF79DA;
-$Tetiary:#99E2D0;
+$lightgray: #f6f6f6;
+$black: #101010;
+$white: #ffffff;
 
-$lightgray:#f6f6f6;
-$black:#101010;
-$white:white;
+//button
+$button-color: linear-gradient(to bottom, $secondary, $primary);
+$button-light: linear-gradient(
+  to bottom,
+  lighten($secondary, 5%),
+  lighten($primary, 5%)
+);

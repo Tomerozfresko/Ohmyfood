@@ -1,29 +1,25 @@
 @use "../Utils/fonts";
 @use "../Utils/colors";
 @use "../Utils/mixins";
+@use "../Utils/variables";
 
 .button {
   display: block;
   text-align: center;
-  // border: 1px solid;
   width: 15rem;
   margin: auto;
   margin-top: 25px;
-  background: linear-gradient(to bottom, colors.$secondary, colors.$primary);
+  background: colors.$button-color;
   @include mixins.font-design(button);
   padding: 15px 30px;
   border-radius: 35px;
   text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: variables.$shadow;
   transition: all 400ms;
   &:hover {
     transform: scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.94) 0px 3px 10px;
+    box-shadow: variables.$shadow--dark;
     animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background: linear-gradient(
-      to bottom,
-      lighten(colors.$secondary, 5%),
-      lighten(colors.$primary, 5%)
-    );
+    background: colors.$button-light;
   }
 }

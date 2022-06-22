@@ -1,11 +1,11 @@
 @use "../Utils/fonts";
 @use "../Utils/colors";
 @use "../Utils/mixins";
+@use "../Utils/variables";
 
 .restaurants-container {
   background-color: colors.$lightgray;
   padding: 1rem;
-  // border: 1px solid;
   min-width: 100%;
 }
 
@@ -13,15 +13,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  // border: 1px solid;
 }
 
 .card {
-  // border: 1px solid;
   background-size: cover;
   padding: 8rem 0 0;
   border-radius: 10px;
-  // @include mixins.shadow;
+  box-shadow: variables.$shadow;
   position: relative;
   overflow: hidden;
   &::after {
@@ -66,16 +64,6 @@
       line-height: 1.5rem;
       position: relative;
       font-weight: 300;
-      // &::after {
-      //   font-family: "Font Awesome 5 Free";
-      //   font-weight: 300;
-      //   content: "\f004";
-      //   position: absolute;
-      //   right: 1rem;
-      //   font-size: 24px;
-      //   bottom: 0.9rem;
-      //   z-index: 1000;
-      // }
     }
   }
 }
@@ -89,7 +77,6 @@
   z-index: 1000;
   opacity: 100%;
   &:hover {
-    color: red;
     opacity: 0%;
   }
 }

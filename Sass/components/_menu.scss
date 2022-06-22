@@ -1,6 +1,7 @@
 @use "../Utils/fonts";
 @use "../Utils/colors";
 @use "../Utils/mixins";
+@use "../Utils/variables";
 
 .menu__image {
   max-width: 100%;
@@ -10,7 +11,6 @@
 }
 
 .menu__container {
-  // border: 5px solid;
   background-color: darken(colors.$lightgray, 1%);
   margin-top: -5rem;
   border-radius: 2rem;
@@ -19,7 +19,6 @@
 }
 
 .restaurantname {
-  // border: 1px solid;
   position: relative;
   padding: 15px;
   margin-bottom: 0;
@@ -41,27 +40,23 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 2rem;
   gap: 2rem;
-  // border: 1px solid;
 }
 
 .section {
-  // border: 1px solid;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   gap: 1rem;
   &__name {
     @include mixins.font-design(section-name);
-    // background-color: red;
     position: relative;
-    // border: 1px solid;
     margin-bottom: 0;
     &::after {
       content: "";
       position: absolute;
       height: 4px;
-      width: 10%;
-      bottom: -0.2rem;
+      width: 15%;
+      bottom: -0.3rem;
       left: 0.1rem;
       background: colors.$Tetiary;
     }
@@ -72,7 +67,7 @@
   display: flex;
   max-width: 35rem;
   border-radius: 10px;
-  // @include mixins.shadow;
+  box-shadow: variables.$shadow;
   overflow: hidden;
   height: 100%;
   position: relative;
@@ -95,14 +90,8 @@
     padding: 5px;
     padding-left: 10px;
     @include mixins.font-design(card-main-text);
-
-    // max-width: 480px;
-    // white-space: nowrap;
-    // overflow: hidden !important;
-    // text-overflow: ellipsis;
   }
   &__secondline {
-    // border: 1px solid;
     margin: 0px;
     @include mixins.flex;
     justify-content: space-between;
@@ -110,17 +99,11 @@
     padding-left: 10px;
     background-color: colors.$white;
 
-    // max-width: 480px;
-    // white-space: nowrap;
-    // // overflow: hidden !important;
-    // text-overflow: ellipsis;
-
     &__text {
       margin: 0px;
       @include mixins.font-design(card-sub-text);
-      // border: 1px solid;
       white-space: nowrap;
-      overflow: hidden !important;
+      overflow: hidden;
       text-overflow: ellipsis;
     }
     &__price {
@@ -128,7 +111,6 @@
       @include mixins.font-design(card-sub-text);
       font-weight: 600;
       margin-right: 1rem;
-      // border: 1px solid;
     }
   }
 }
@@ -149,9 +131,7 @@
   0% {
     transform: scale(0);
   }
-  // 50% {
-  //   transform: scale(0.5);
-  // }
+
   100% {
     transform: scale(1);
   }
@@ -170,7 +150,6 @@
 .main_dish {
   animation-delay: 0.4s;
 }
-
 .desserts {
   animation-delay: 0.6s;
 }
