@@ -5,7 +5,7 @@
 
 .restaurants-container {
   background-color: colors.$lightgray;
-  padding: 1rem;
+  padding: 1rem 1rem 4rem 1rem;
   min-width: 100%;
 }
 
@@ -58,12 +58,14 @@
     &__main {
       line-height: 1.5rem;
       margin: 0;
+      padding-left: 0.2rem;
     }
     &__sub {
       margin: 0;
       line-height: 1.5rem;
       position: relative;
       font-weight: 300;
+      padding-left: 0.2rem;
     }
   }
 }
