@@ -464,16 +464,16 @@ body {
   left: 0;
 }
 .card--thefullplate {
-  background-image: url(../images/restaurants/TheFullPalette.jpg);
+  background-image: url(../images/restaurants/thefullpalette.jpg);
 }
 .card--theenchantedplate {
-  background-image: url(../images/restaurants/TheEnchantedPlate.jpg);
+  background-image: url(../images/restaurants/theenchantedplate.jpg);
 }
 .card--bastille {
   background-image: url(../images/restaurants/bastille.jpg);
 }
 .card--legourmand {
-  background-image: url(../images/restaurants/LeGourmand.jpg);
+  background-image: url(../images/restaurants/legourmand.jpg);
 }
 .card__footer {
   background-color: #ffffff;
