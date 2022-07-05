@@ -10,11 +10,13 @@
   @include mixins.flex;
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
+  height: 50px;
+  box-shadow: variables.$shadow;
   &__icon {
-    color: colors.$black;
+    color: lighten(colors.$black, 30%);
     margin: 10px 0px;
     position: relative;
-    left: 2rem;
+    left: 1rem;
     height: 1rem;
   }
   &__address-input {
@@ -29,17 +31,16 @@
   @include mixins.flex(column);
   text-align: center;
   padding: 20px;
-  // box-shadow: variables.$shadow;//do i need to add shadow?
+  box-shadow: variables.$shadow;
   &__main-text {
     @include mixins.font-design(title);
     margin: Opx;
   }
   &__sub-text {
     @include mixins.font-design(sub);
+    font-weight: 300;
   }
 }
 .title {
   @include mixins.font-design(title);
 }
-
-

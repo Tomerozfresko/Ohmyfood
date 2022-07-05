@@ -3,6 +3,9 @@
 @use "../Utils/mixins";
 @use "../Utils/variables";
 
+.body--menu {
+  background-color: darken(colors.$lightgray, 1%);
+}
 .menu__image {
   max-width: 100%;
   max-height: 25rem;
@@ -72,6 +75,8 @@
   overflow: hidden;
   height: 100%;
   position: relative;
+  background-color: colors.$white;
+  // padding: 1rem;
 
   &__text {
     width: 100%;
@@ -83,22 +88,21 @@
     .reservation-animation {
       width: 50px;
       opacity: 1;
+      font-size: 1rem;
     }
   }
   &__firstline {
     background-color: colors.$white;
     margin: 0px;
-    padding: 5px;
-    padding-left: 10px;
     @include mixins.font-design(card-main-text);
+    padding: 1rem 0rem 0.25rem 1rem;
   }
   &__secondline {
     margin: 0px;
     @include mixins.flex;
     justify-content: space-between;
-    padding: 5px;
-    padding-left: 10px;
     background-color: colors.$white;
+    padding: 0.25rem 0rem 1rem 1rem;
 
     &__text {
       margin: 0px;

@@ -7,7 +7,7 @@
   text-align: center;
   @include mixins.font-design(logo);
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1rem;
   &__back-button {
     position: absolute;
     left: 0.5rem;
@@ -25,7 +25,8 @@
 .back__button {
   text-decoration: none;
   position: absolute;
-  top: 1.3rem;
+  top: 1rem;
   left: 0.5rem;
   font-size: 2rem;
+  color: colors.$black;
 }

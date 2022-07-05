@@ -1,0 +1,97 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face defontColorarations, if any.
+// -----------------------------------------------------------------------------
+@use "colors";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
+
+// -----------------------------------------------------------------------------
+// Graphic identity - Fonts
+// -----------------------------------------------------------------------------
+
+$font-palette: (
+  logo: (
+    fontSize: 1.8rem,
+    fontWeight: 600,
+    fontColor: colors.$black,
+    fontFamily: "Shrikhand",
+  ),
+  logo-footer: (
+    fontSize: 1.2rem,
+    fontWeight: 500,
+    fontColor: colors.$white,
+    fontFamily: "Shrikhand",
+  ),
+  title: (
+    fontSize: 1.2rem,
+    fontWeight: 600,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+  sub: (
+    fontSize: 1rem,
+    fontWeight: 400,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+  card: (
+    fontSize: 1rem,
+    fontWeight: 600,
+    fontColor: lighten(colors.$black, 5%),
+    fontFamily: "roboto",
+  ),
+  button: (
+    fontSize: 1rem,
+    fontWeight: 300,
+    fontColor: colors.$white,
+    fontFamily: "roboto",
+  ),
+  step: (
+    fontSize: 1rem,
+    fontWeight: 400,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+  step-number: (
+    fontSize: 0.8rem,
+    fontWeight: 300,
+    fontColor: white,
+    fontFamily: "roboto",
+  ),
+  new-box: (
+    fontSize: 0.8rem,
+    fontWeight: 500,
+    fontColor: darken(colors.$Tetiary, 40%),
+    fontFamily: "roboto",
+  ),
+  card-main-text: (
+    fontSize: 1rem,
+    fontWeight: 600,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+  card-sub-text: (
+    fontSize: 1rem,
+    fontWeight: 300,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+  list-item: (
+    fontSize: 1rem,
+    fontWeight: 300,
+    fontColor: colors.$white,
+    fontFamily: "roboto",
+  ),
+  rest-name: (
+    fontSize: 2rem,
+    fontWeight: 600,
+    fontColor: colors.$black,
+    fontFamily: "Shrikhand",
+  ),
+  section-name: (
+    fontSize: 1.2rem,
+    fontWeight: 300,
+    fontColor: colors.$black,
+    fontFamily: "roboto",
+  ),
+);

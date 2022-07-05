@@ -9,7 +9,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-
 html {
   line-height: 1.15;
   /* 1 */
@@ -185,9 +184,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -195,9 +194,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -206,9 +205,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -258,8 +257,8 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
+[type=checkbox],
+[type=radio] {
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -269,8 +268,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -278,7 +277,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -288,7 +287,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -369,6 +368,7 @@ body {
   gap: 2rem;
   flex-wrap: wrap;
   padding: 0;
+  margin-bottom: 60px;
 }
 
 .step {
@@ -378,8 +378,12 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: relative;
   width: 20rem;
+  height: 4.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #101010;
   font-family: "roboto";
 }
@@ -400,11 +404,15 @@ body {
   height: 1.5rem;
   width: 1.5rem;
   left: -0.75rem;
-  bottom: 1rem;
+  bottom: 1.4rem;
   text-align: center;
 }
 .step i {
   margin-right: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #767676;
+  font-size: 1.25rem;
 }
 
 .step--purple i {
@@ -469,7 +477,8 @@ body {
 }
 .card__footer {
   background-color: #ffffff;
-  padding: 5px;
+  padding: 10px;
+  height: 70px;
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
@@ -478,14 +487,12 @@ body {
 .card__footer__main {
   line-height: 1.5rem;
   margin: 0;
-  padding-left: 0.2rem;
 }
 .card__footer__sub {
   margin: 0;
   line-height: 1.5rem;
   position: relative;
   font-weight: 300;
-  padding-left: 0.2rem;
 }
 
 .heart {
@@ -493,7 +500,7 @@ body {
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1rem;
+  bottom: 1.8rem;
   z-index: 1000;
   opacity: 100%;
 }
@@ -506,13 +513,17 @@ body {
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1rem;
+  bottom: 1.8rem;
   z-index: 1000;
   opacity: 0%;
 }
 .heart--full:hover {
   color: #9356dc;
   opacity: 100%;
+}
+
+.body--menu {
+  background-color: #f3f3f3;
 }
 
 .menu__image {
@@ -590,6 +601,7 @@ body {
   overflow: hidden;
   height: 100%;
   position: relative;
+  background-color: #ffffff;
 }
 .dish__text {
   width: 100%;
@@ -599,25 +611,24 @@ body {
 .dish:hover .reservation-animation {
   width: 50px;
   opacity: 1;
+  font-size: 1rem;
 }
 .dish__firstline {
   background-color: #ffffff;
   margin: 0px;
-  padding: 5px;
-  padding-left: 10px;
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
+  padding: 1rem 0rem 0.25rem 1rem;
 }
 .dish__secondline {
   margin: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
-  padding-left: 10px;
   background-color: #ffffff;
+  padding: 0.25rem 0rem 1rem 1rem;
 }
 .dish__secondline__text {
   margin: 0px;
@@ -682,12 +693,12 @@ body {
 .logo {
   display: block;
   text-align: center;
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 1rem;
 }
 .logo__back-button {
   position: absolute;
@@ -709,9 +720,10 @@ body {
 .back__button {
   text-decoration: none;
   position: absolute;
-  top: 1.3rem;
+  top: 1rem;
   left: 0.5rem;
   font-size: 2rem;
+  color: #101010;
 }
 
 .button {
@@ -721,7 +733,7 @@ body {
   margin: 1rem auto 1rem auto;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   color: #ffffff;
   font-family: "roboto";
   padding: 15px 30px;
@@ -883,19 +895,21 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #e9e9e9;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .location__icon {
-  color: #101010;
+  color: #5d5d5d;
   margin: 10px 0px;
   position: relative;
-  left: 2rem;
+  left: 1rem;
   height: 1rem;
 }
 .location__address-input {
   background: transparent;
   border: none;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #101010;
   font-family: "roboto";
   text-align: center;
@@ -907,6 +921,7 @@ body {
   flex-direction: column;
   text-align: center;
   padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .intrudction__main-text {
   font-size: 1.2rem;
@@ -917,9 +932,10 @@ body {
 }
 .intrudction__sub-text {
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #101010;
   font-family: "roboto";
+  font-weight: 300;
 }
 
 .title {
@@ -930,7 +946,7 @@ body {
 }
 
 .footer {
-  background-color: #101010;
+  background-color: #434343;
   width: 100%;
   height: fit-content;
   padding: 1rem;

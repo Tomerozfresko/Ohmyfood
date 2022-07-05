@@ -6,10 +6,10 @@
 
 @mixin font-design($type) {
   $palette: map-get(fonts.$font-palette, $type);
-  font-size: map-get($palette, fs);
-  font-weight: map-get($palette, fw);
-  color: map-get($palette, cl);
-  font-family: map-get($palette, ff);
+  font-size: map-get($palette, fontSize);
+  font-weight: map-get($palette, fontWeight);
+  color: map-get($palette, fontColor);
+  font-family: map-get($palette, fontFamily);
 }
 
 @mixin flex($direction: row) {
@@ -21,5 +21,3 @@
   justify-content: center;
   align-items: center;
 }
-
-
