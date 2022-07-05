@@ -11,7 +11,8 @@
   @include mixins.flex-center;
   background-color: darken(colors.$lightgray, 5%);
   height: 50px;
-  box-shadow: variables.$shadow;
+  // box-shadow: variables.$shadow;
+  // box-shadow: 1px 12px 40px -1px rgba(0,0,0,0.39) inset;;
   &__icon {
     color: lighten(colors.$black, 30%);
     margin: 10px 0px;

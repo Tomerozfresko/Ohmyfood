@@ -6,13 +6,13 @@
 @use "../Utils/mixins";
 
 .footer {
-  background-color: lighten(colors.$black,20%);
+  background-color: lighten(colors.$black, 20%);
   width: 100%;
   height: fit-content;
-  padding: 1rem;
+  padding: 2rem;
   &__list {
-    padding-left: 10px;
     margin: 0px;
+    padding: 0px;
   }
   &__item {
     list-style: none;
