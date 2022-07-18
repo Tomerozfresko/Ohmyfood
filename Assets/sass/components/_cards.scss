@@ -89,13 +89,14 @@
   right: 1rem;
   font-size: 24px;
   bottom: 1.8rem;
-  z-index: 1000;
+  z-index: 1001;
   opacity: 0%;
-
+  background: colors.$button-color;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in-out;
   &:hover {
-    // opacity: 100%;
-    // background: linear-gradient(0deg, colors.$primary, colors.$secondary);
-    // background-clip: text;
-    // color: transparent;
+    opacity: 100%;
   }
 }

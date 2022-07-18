@@ -375,7 +375,7 @@ body {
   background-color: #f6f6f6;
   padding: 1.2rem;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   position: relative;
   width: 21rem;
   height: 4.375rem;
@@ -439,7 +439,7 @@ body {
   background-size: cover;
   padding: 10rem 0 0;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   position: relative;
   overflow: hidden;
 }
@@ -515,9 +515,18 @@ body {
   right: 1rem;
   font-size: 24px;
   bottom: 1.8rem;
-  z-index: 1000;
+  z-index: 1001;
   opacity: 0%;
+  background: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in-out;
 }
+.heart--full:hover {
+  opacity: 100%;
+}
+
 .body--menu {
   background-color: #f3f3f3;
 }
@@ -593,7 +602,7 @@ body {
   display: flex;
   max-width: 35rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   overflow: hidden;
   height: 100%;
   position: relative;
@@ -735,12 +744,12 @@ body {
   padding: 15px 30px;
   border-radius: 35px;
   text-decoration: none;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 8px;
   transition: all 400ms;
 }
 .button:hover {
   transform: scale(1.05);
-  box-shadow: rgba(0, 0, 0, 0.94) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
   animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   background: linear-gradient(to bottom, #ff93e1, #a16be0);
 }
@@ -892,7 +901,7 @@ body {
   align-items: center;
   background-color: #e9e9e9;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.94) 0px 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
 }
 .location__icon {
   color: #2a2a2a;
