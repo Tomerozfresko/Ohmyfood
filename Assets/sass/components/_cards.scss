@@ -39,6 +39,7 @@
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: 900;//Will assure that heart Icon will be above the link surface
   }
   &--thefullplate {
     background-image: url(../images/restaurants/thefullpalette.jpg);

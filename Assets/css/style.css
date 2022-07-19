@@ -358,9 +358,6 @@ body {
   margin: 0;
 }
 
-/**
- * Basic styles for links
- */
 .steps-container {
   list-style-type: none;
   display: flex;
@@ -463,6 +460,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 900;
 }
 .card--thefullplate {
   background-image: url(../images/restaurants/thefullpalette.jpg);
@@ -551,20 +549,17 @@ body {
   padding: 2rem 0rem 1rem 2rem;
   margin-bottom: 0;
   margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 2rem;
   font-weight: 600;
   color: #101010;
   font-family: "Shrikhand";
 }
-.restaurantname::after {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 300;
-  content: "\f004";
-  position: absolute;
-  right: 2rem;
-  bottom: 1.5rem;
-  font-size: 24px;
-  z-index: 2;
+
+.heart--restaurtantMenu {
+  padding-right: 2.5rem;
 }
 
 .section__container {
