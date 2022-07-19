@@ -362,7 +362,7 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1.5rem;
   flex-wrap: wrap;
   padding: 0;
   margin-bottom: 60px;
@@ -445,7 +445,7 @@ body {
   background-color: #99e2d0;
   position: absolute;
   text-align: center;
-  padding: 3px 15px 3px 15px;
+  padding: 0.5rem 1.5rem;
   font-size: 0.8rem;
   font-weight: 500;
   color: #278870;
@@ -476,8 +476,8 @@ body {
 }
 .card__footer {
   background-color: #ffffff;
-  padding: 10px;
-  height: 70px;
+  padding: 0.8rem;
+  height: 80px;
   font-size: 1rem;
   font-weight: 600;
   color: #101010;
@@ -499,12 +499,13 @@ body {
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1.8rem;
+  bottom: 2rem;
   z-index: 1000;
   opacity: 100%;
 }
 .heart:hover {
   opacity: 0%;
+  cursor: pointer;
 }
 
 .heart--full {
@@ -512,7 +513,7 @@ body {
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1.8rem;
+  bottom: 2rem;
   z-index: 1001;
   opacity: 0%;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
@@ -523,6 +524,7 @@ body {
 }
 .heart--full:hover {
   opacity: 100%;
+  cursor: pointer;
 }
 
 .body--menu {
@@ -546,7 +548,7 @@ body {
 
 .restaurantname {
   position: relative;
-  padding: 2rem 0rem 1rem 2rem;
+  padding: 3rem 0rem 1rem 1rem;
   margin-bottom: 0;
   margin-top: 0px;
   display: flex;
@@ -559,13 +561,13 @@ body {
 }
 
 .heart--restaurtantMenu {
-  padding-right: 2.5rem;
+  padding-right: 1.5rem;
 }
 
 .section__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 2rem;
+  padding: 1rem;
   gap: 2rem;
 }
 
@@ -720,9 +722,9 @@ body {
 .back__button {
   text-decoration: none;
   position: absolute;
-  top: 1rem;
-  left: 0.5rem;
-  font-size: 2rem;
+  top: 1.3rem;
+  left: 1rem;
+  font-size: 1.5rem;
   color: #101010;
 }
 
@@ -733,7 +735,7 @@ body {
   margin: 1rem auto 1rem auto;
   background: linear-gradient(to bottom, #ff79da, #9356dc);
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #ffffff;
   font-family: "roboto";
   padding: 15px 30px;
@@ -896,7 +898,7 @@ body {
   align-items: center;
   background-color: #e9e9e9;
   height: 50px;
-  box-shadow: rgba(0, 0, 0, 0.9) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.2) inset 0px 4px 3px;
 }
 .location__icon {
   color: #2a2a2a;
@@ -923,7 +925,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
 }
 .intrudction__main-text {
   font-size: 1.2rem;
@@ -944,6 +946,8 @@ body {
   font-weight: 600;
   color: #101010;
   font-family: "roboto";
+  margin: 0;
+  padding: 2rem 0rem 1rem 0rem;
 }
 
 .footer {

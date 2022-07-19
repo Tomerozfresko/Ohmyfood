@@ -27,7 +27,7 @@
     background-color: colors.$Tetiary;
     position: absolute;
     text-align: center;
-    padding: 3px 15px 3px 15px;
+    padding: .5rem 1.5rem;
     @include mixins.font-design(new-box);
     top: 1rem;
     right: 1rem;
@@ -55,8 +55,8 @@
   }
   &__footer {
     background-color: colors.$white;
-    padding: 10px;
-    height: 70px;
+    padding: .8rem;
+    height: 80px;
     @include mixins.font-design(card-main-text);
     &__main {
       line-height: 1.5rem;
@@ -76,11 +76,12 @@
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1.8rem;
+  bottom: 2rem;
   z-index: 1000;
   opacity: 100%;
   &:hover {
     opacity: 0%;
+    cursor: pointer;
   }
 }
 
@@ -89,7 +90,7 @@
   position: absolute;
   right: 1rem;
   font-size: 24px;
-  bottom: 1.8rem;
+  bottom: 2rem;
   z-index: 1001;
   opacity: 0%;
   background: colors.$button-color;
@@ -99,5 +100,7 @@
   transition: opacity 0.3s ease-in-out;
   &:hover {
     opacity: 100%;
+    cursor: pointer;
+
   }
 }
