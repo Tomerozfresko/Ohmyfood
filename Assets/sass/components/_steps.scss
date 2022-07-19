@@ -22,7 +22,6 @@
   height: 4.375rem;
   @include mixins.flex();
   align-items: center;
-  // @include mixins.flex-center();
   @include mixins.font-design(step);
   &--purple {
     background-color: lighten(colors.$primary, 35%);
